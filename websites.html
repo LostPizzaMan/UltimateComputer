@@ -1,0 +1,203 @@
+<html> 
+	<head>
+        <script type="text/javascript" src="javascript\jquery-3.3.1.min.js"></script> 
+        <script type="text/javascript" src="javascript\jquery.tablesorter.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Ultimate Computer Wiki </title> 
+        <link rel="stylesheet" href="css/style.css"
+	</head> 
+
+<body>
+
+<header>
+      <div class="container">
+        <div id="branding">
+          <h2><span class="highlight">Ultimate</span> Computer Wiki</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="emulation.html">Emulation</a></li>  
+            <li><a href="games.html">Games</a></li>  
+            <li><a href="learn.html">Learning</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li class="current"><a href="websites.html">Websites</a></li>  
+          </ul>
+        </nav>
+      </div>
+    </header>
+       
+<section id="showcase">
+    
+    <div class = container>
+	
+    </div>
+
+</section> 
+    
+<center>        
+    
+<style>
+    a { color: #666666;
+    text-decoration: none;} 
+</style>
+    
+<input type="text" id="search" onkeyup="searchFunction('search', 0)" placeholder="Search by Name">
+    
+<input type="text" id="searchDescription" onkeyup="searchFunction('searchDescription', 1)" placeholder="Search by Description">          
+    
+<table id="List" class="tablesorter">
+      
+<thead>
+<tr class="header">
+   <th>Name</th>
+   <th>Description</th>
+   <th>Download</th> 
+</tr>
+</thead>
+    
+<tbody>  
+    
+<tr>
+    <td>Future Time Line</td>
+    <td>Future timeline, a timeline of humanity's future, based on current trends, long-term environmental changes, advances in technology such as Moore's Law.</td>
+    <td><a href="https://www.futuretimeline.net/index.htm#timeline">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>Geo Guessr</td>
+    <td>GeoGuessr is a web-based geographic discovery game designed by Anton Wallén, a Swedish IT consultant, released on 9 May 2013.</td>
+    <td><a href="https://geoguessr.com/">Link</a></td>
+</tr>	    
+    
+<tr>
+    <td>Have I Been Pwned</td>
+    <td>Have I Been Pwned? is a website that allows internet users to check if their personal data has been compromised by data breaches.</td>
+    <td><a href="https://haveibeenpwned.com/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>Internet Archive</td>
+    <td>Internet Archive is a non-profit digital library offering free universal access to books, movies & music, as well as 327 billion archived web pages.</td>
+    <td><a href="https://archive.org/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>Library of Babel</td>
+    <td>A project towards a universal library. By this art you may contemplate the variation of the 23 letters.</td>
+    <td><a href="https://libraryofbabel.info/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>My Noise</td>
+    <td>Background Noises • Ambient Sounds • Interactive Soundscapes • Relaxing Music • Shaped to your Environment & Hearing</td>
+    <td><a href="https://mynoise.net/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>Paletton</td>
+    <td>In love with colors, since 2002. A designer tool for creating color combinations that work together well. </td>
+    <td><a href="http://paletton.com">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>RSOE EDIS</td>
+    <td>Welcome to the RSOE Emergency and Disaster Information Service (EDIS) website. The page shows the disaster and emergency events that occurred on Earth.</td>
+    <td><a href="http://hisz.rsoe.hu/alertmap/index2.php">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>The True Size</td>
+    <td>Drag and drop countries around the map to compare their relative size. Is Greenland really as big as all of Africa? You may be surprised at what you find!</td>
+    <td><a href="https://thetruesize.com">Link</a></td>
+</tr>	  
+    
+<tr>
+    <td>Wide-band WebSDR</td>
+    <td>A website that lets you listen to nearby shortwave radio stations on a visible spectrum.</td>
+    <td><a href="http://websdr.ewi.utwente.nl:8901/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>color.method.ac</td>
+    <td>See how well you can difference between different color hues.</td>
+    <td><a href="https://color.method.ac/">Link</a></td>
+</tr>	      
+<tr>
+    <td>worldometers</td>
+    <td>Worldometer, formerly Worldometers, is a reference website that provides counters and real-time statistics for diverse topics.</td>
+    <td><a href="https://www.worldometers.info/">Link</a></td>
+</tr>
+    
+<tr>
+    <td>freelearninglist</td>
+    <td>The internet's best education resources.</td>
+    <td><a href="https://freelearninglist.org/">Link</a></td>
+</tr>
+
+<tr>
+    <td>PCPartPicker</td>
+    <td>PCPartPicker is a comparison shopping website that allows users to compare prices and compatibility of computer components on different retailers online. </td>
+    <td><a href="https://pcpartpicker.com/">Link</a></td>
+</tr>
+
+<tr>
+    <td>Desmos</td>
+    <td>Desmos is an advanced graphing calculator implemented as a web application and a mobile application written in JavaScript.</td>
+    <td><a href="https://www.desmos.com/">Link</a></td>
+</tr>
+
+<tr>
+    <td>sleepyti.me</td>
+    <td>Sleepyti.me bedtime calculator helps you wake up refreshed by finding the best time to go to sleep.</td>
+    <td><a href="https://sleepyti.me/">Link</a></td>
+</tr>
+    
+</tbody>
+</table>
+	                 
+<script>
+              
+  $(document).ready(function()
+	{
+		$("#List").tablesorter({ sortList: [[0,0], [1,0]] });
+	}
+);        
+        
+</script>                    
+        
+<script>
+function searchFunction(key, id) {
+    
+  var input, filter, table, tr, td, i;
+  input = document.getElementById(key);
+  filter = input.value.toUpperCase();
+  table = document.getElementById("List");
+  tr = table.getElementsByTagName("tr");  
+  var format = id; 
+    
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[format];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>          
+    
+</center>	
+	
+<footer>
+    
+    <p>Copyright © 2020 LostPizzaMan. All Rights Reserved</p>
+        
+</footer>
+        
+</body>
+	
+</html>
+

@@ -1,0 +1,155 @@
+<html> 
+	<head>
+        <script type="text/javascript" src="javascript\jquery-3.3.1.min.js"></script> 
+        <script type="text/javascript" src="javascript\jquery.tablesorter.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Ultimate Computer Wiki </title> 
+        <link rel="stylesheet" href="css/style.css"
+	</head> 
+
+<body>
+
+<header>
+      <div class="container">
+        <div id="branding">
+          <h2><span class="highlight">Ultimate</span> Computer Wiki</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="emulation.html">Emulation</a></li>  
+            <li class="current"><a href="games.html">Games</a></li>
+            <li><a href="learn.html">Learning</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="websites.html">Websites</a></li>  
+          </ul>
+        </nav>
+      </div>
+    </header>
+       
+<section id="showcase">
+    
+    <div class = container>
+	
+    </div>
+
+</section> 
+    
+<center>        
+    
+<style>
+    a { color: #666666;
+    text-decoration: none;} 
+</style>
+    
+<input type="text" id="search" onkeyup="searchFunction('search', 0)" placeholder="Search by Name">
+    
+<input type="text" id="searchDescription" onkeyup="searchFunction('searchDescription', 1)" placeholder="Search by Description">          
+    
+<table id="List" class="tablesorter">
+      
+<thead>   
+<tr class="header">
+   <th>Name</th>
+   <th>Description</th>
+   <th>Download</th> 
+</tr>   
+</thead>
+<tbody>  
+   
+<tr>
+    <td>Algodoo</td>
+    <td>Algodoo is a physics-based 2D sandbox freeware.</td>
+    <td><a href="http://www.algodoo.com/">Download</a></td>
+</tr>	
+    
+<tr>
+    <td>C&C:Online</td>
+    <td>A Command & Conquer online multiplayer server made by the community.</td>
+    <td><a href="https://cnc-online.net/en/">Download</a></td>
+</tr>    
+    
+<tr>
+    <td>Celestia</td>
+    <td>Celestia is a 3D astronomy program created by Chris Laurel.</td>
+    <td><a href="https://celestia.space/">Download</a></td>
+</tr>  
+    
+<tr>
+    <td>PokeMMO</td>
+    <td>PokeMMO is a fan-made Massively Multiplayer Online Game based on GameFreak's popular Pokémon video game franchise.</td>
+    <td><a href="https://pokemmo.eu/">Download</a></td>
+</tr>	
+    
+<tr>
+    <td>RuneLite</td>
+    <td>RuneLite is a free, open-source and super fast client for Old School RuneScape.</td>
+    <td><a href="https://runelite.net/">Download</a></td>
+</tr>	   
+    
+<tr>
+    <td>SpaceEngine</td>
+    <td>SpaceEngine is a proprietary 3D astronomy program and game engine developed by Russian astronomer and programmer Vladimir Romanyuk.</td>
+    <td><a href="http://spaceengine.org/">Download</a></td>
+</tr> 
+    
+<tr>
+    <td>Stud.io</td>
+    <td>Stud.io aims to get as close to the feeling of building with LEGO in real life.</td>
+    <td><a href="http://stud.io/">Download</a></td>
+</tr>   
+    
+<tr>
+    <td>Battle Lads</td>
+    <td>A tower defense and real time strategy hybrid with a voxel art style.</td>
+    <td><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">Download</a></td>
+</tr>
+    
+</tbody>
+</table>
+	                 
+<script>        
+        
+  $(document).ready(function()
+	{
+		$("#List").tablesorter({ sortList: [[0,0], [1,0]] });
+	}
+);        
+        
+</script>              
+            
+<script>
+function searchFunction(key, id) {
+    
+  var input, filter, table, tr, td, i;
+  input = document.getElementById(key);
+  filter = input.value.toUpperCase();
+  table = document.getElementById("List");
+  tr = table.getElementsByTagName("tr");  
+  var format = id; 
+    
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[format];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>           
+    
+</center>	
+	
+<footer>
+    
+    <p>Copyright © 2020 LostPizzaMan. All Rights Reserved</p>
+        
+</footer>
+        
+</body>
+	
+</html>
+

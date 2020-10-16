@@ -1,0 +1,273 @@
+body {
+    font: 15px/1.5 sans-serif;
+    padding:0;
+    margin:0;
+	background-position: bottom;
+	background-repeat: no-repeat;
+    background-color: 181A1B;
+    background-size: 100%;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden  
+}
+
+/*
+################
+This section contains the code for the navbar.
+################
+*/
+
+
+header{
+    background-color: #1F2223;
+    color:#ffffff;
+    padding-top:5px;
+    min-height:70px;
+    border-bottom:#BA0000 3px solid;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    font: 20px/1.5 sans-serif;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header nav{
+    float:right;
+    margin-top: 25px;
+}
+
+header .current a{
+    color:white;
+    font-weight:bold;
+    background-color: #BA0000;
+}
+
+header .highlight {
+    color: #BA0000;
+    font-weight:bold;
+}
+
+header a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+/*
+################
+This section contains the code for the fun stuff.
+################
+*/
+
+#showcase {
+    margin-top: 50px;
+    margin-bottom: 75px;
+    min-height: 40px;
+}
+
+/*
+################
+This section contains the code for the fun list.
+################
+*/
+
+table tr th:nth-child(1){
+        width: 20%;
+     }
+
+table tr th:nth-child(4){
+        width: 10%;
+     }
+
+table tr th:nth-child(3){
+        width: 10%;
+     }
+
+td {
+  padding: 0.5em 1em;  
+}
+
+@media screen and (max-width: 600px) {
+    
+#List tr.header {
+    visibility: hidden;
+}
+    
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-top: 5px solid #f2f2f2;
+    display: block;
+    margin-bottom: .625em;
+    font: 20px/1.5 sans-serif;
+  }
+  
+  table td {
+    
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/*
+################
+This section contains the code for the footer. 
+################
+*/
+
+footer {  
+    color:#ffffff;
+    background-color:#BA0000;
+    text-align: center;
+    width:100%;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    margin: 10px 0;
+	//margin-top: 50px;
+    font: 15px/1.5 sans-serif;
+}
+ 
+/*
+################
+This section contains the code for the lists. 
+################
+*/
+
+#searchDescription, #search, #searchGenre {
+    width: 25%;
+    font: 18px/1.5 Helvetica;
+    padding: 12px 20px 12px 20px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 50px; 
+}
+
+#genres{  
+    width: 12.5%;
+    font: 18px/1.5 Helvetica;
+    padding: 14px 20px 15px 20px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 50px; 
+    
+}
+
+#List {
+    border-collapse: collapse; 
+    width: 100%; 
+    //border: 1px solid #ddd; 
+	border-bottom: 7px solid #BA0000; 
+    background-color:  #1F2223;
+    font: 15px/1.5 Helvetica; 
+    font-weight: bold;
+    color: #ACBBBF;
+}
+
+#List  td{
+    //border-left: 3px solid #BA0000;
+    text-align: center;
+    padding: 25px; 
+}
+
+#List th {
+    text-align: center;
+    padding: 25px; 
+}
+
+#List tr {
+ //border-bottom: 3px solid  #BA0000;
+ //border-left: 7px solid  #BA0000;
+ //border-right: 7px solid  #BA0000;
+}
+
+#List tr:nth-of-type(odd) {
+    background-color: #181A1B;
+}
+
+#List tr:nth-of-type(even) {
+    //background-color: #202324;
+}
+
+#List td:hover {
+    //background-color: #f2f2f2;
+}
+
+#List tr.header {
+    font: 15px/1.5 Helvetica;
+    background-color: #BA0000;
+    color: #ffffff;
+    border-bottom: 0px solid #f2f2f2;
+    border-left: 0px solid #f2f2f2;
+    border-right: 0px solid #f2f2f2;
+}
+
+/*
+################
+This section contains the code for the list sorter.
+################
+*/
+
+table.tablesorter thead tr .header {
+	background-image: url(../img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 80%; 
+	cursor: pointer;
+}
+
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../img/asc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../img/desc.gif);
+}

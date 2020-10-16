@@ -1,0 +1,164 @@
+<html> 
+	<head>
+        <script type="text/javascript" src="javascript\jquery-3.3.1.min.js"></script> 
+        <script type="text/javascript" src="javascript\jquery.tablesorter.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Ultimate Computer Wiki </title> 
+        <link rel="stylesheet" href="css/style.css"
+	</head> 
+
+<body>
+
+<header>
+      <div class="container">
+        <div id="branding">
+          <h2><span class="highlight">Ultimate</span> Computer Wiki</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li class="current"><a href="emulation.html">Emulation</a></li>  
+            <li><a href="games.html">Games</a></li>  
+            <li><a href="learn.html">Learning</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="websites.html">Websites</a></li>  
+          </ul>
+        </nav>
+      </div>
+    </header>
+       
+<section id="showcase">
+    
+    <div class = container>
+	
+    </div>
+
+</section> 
+    
+<center>        
+    
+<style>
+    a { color: #666666;
+    text-decoration: none;} 
+</style>
+    
+<input type="text" id="search" onkeyup="searchFunction('search', 0)" placeholder="Search by Name">
+    
+<input type="text" id="searchDescription" onkeyup="searchFunction('searchDescription', 1)" placeholder="Search by Description">       
+    
+<table id="List" class="tablesorter">
+      
+<thead>
+<tr class="header">
+   <th>Name</th>
+   <th>Description</th>
+   <th>Download</th> 
+</tr>
+</thead>
+    
+<tbody>  
+ 
+<tr>
+    <td>Cemu</td>
+    <td>Cemu is a closed source Wii U video game console emulator for Microsoft Windows-based personal computers.</td>
+    <td><a href="http://cemu.info/">Download</a></td>
+</tr>  
+ 
+    
+<tr>
+    <td>Citra</td>
+    <td>Citra is the first emulator of Nintendo 3DS, developed by Citra Team. It is developed in the C++ programming language. Citra can run almost all homebrew games and some commercial games. Citra requires OpenGL version 3.3 or later to run.</td>
+    <td><a href="https://citra-emu.org/">Download</a></td>
+</tr>
+    
+<tr>
+    <td>Dolphin</td>
+    <td>Dolphin is a video game console emulator for the GameCube and Wii that runs on Windows, Linux, macOS, and Android. It had its inaugural release in 2003 as freeware for Windows.</td>
+    <td><a href="https://dolphin-emu.org/">Download</a></td>
+</tr> 
+       
+<tr>
+    <td>LaunchBox</td>
+    <td>LaunchBox is a portable, box-art-based games database and launcher for DOSBox, emulators, arcade cabinets, and PC Games.</td>
+    <td><a href="https://www.launchbox-app.com/">Download</a></td>
+</tr>
+    
+<tr>
+    <td>RPCS3</td>
+    <td>RPCS3 is a free and open-source in-development video game console emulator and debugger for the Sony PlayStation 3. It was developed in the C++ programming language and features OpenGL, Vulkan and DirectX 12 as its back-end renderers.</td>
+    <td><a href="https://rpcs3.net/">Download</a></td>
+</tr>     
+    
+<tr>
+    <td>RetroArch</td>
+    <td>RetroArch is the reference implementation of the libretro API. It is free, open source, cross-platform software, licensed under the GNU GPLv3.</td>
+    <td><a href="http://www.retroarch.com/">Download</a></td>
+</tr>
+        
+<tr>
+    <td>RetroPie</td>
+    <td>Welcome to RetroPie. RetroPie allows you to turn your Raspberry Pi, ODroid C1/C2, or PC into a retro-gaming machine. </td>
+    <td><a href="https://retropie.org.uk/">Download</a></td>
+</tr>
+    
+<tr>
+    <td>Ryujinx</td>
+    <td>Ryujinx is a Nintendo Switch Emulator programmed in C#; unlike most emulators that are created with C++ or C.</td>
+    <td><a href="https://ryujinx.org/">Download</a></td>
+</tr>  
+
+    
+<tr>
+    <td>yuzu</td>
+    <td>yuzu is an experimental open-source emulator for the Nintendo Switch from the creators of Citra. It is written in C++ with portability in mind, with builds actively maintained for Windows, Linux and macOS.</td>
+    <td><a href="https://yuzu-emu.org/">Download</a></td>
+</tr>         
+       
+</tbody>
+</table>
+	    
+<script>
+              
+  $(document).ready(function()
+	{
+		$("#List").tablesorter({ sortList: [[0,0], [1,0]] });
+	}
+);        
+        
+</script>                    
+        
+<script>
+function searchFunction(key, id) {
+    
+  var input, filter, table, tr, td, i;
+  input = document.getElementById(key);
+  filter = input.value.toUpperCase();
+  table = document.getElementById("List");
+  tr = table.getElementsByTagName("tr");  
+  var format = id; 
+    
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[format];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>          
+    
+</center>	
+	
+<footer>
+    
+    <p>Copyright © 2020 LostPizzaMan. All Rights Reserved</p>
+        
+</footer>
+        
+</body>
+	
+</html>
+

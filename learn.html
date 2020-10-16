@@ -1,0 +1,168 @@
+<html> 
+	<head>
+        <script type="text/javascript" src="javascript\jquery-3.3.1.min.js"></script> 
+        <script type="text/javascript" src="javascript\jquery.tablesorter.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Ultimate Computer Wiki </title> 
+        <link rel="stylesheet" href="css/style.css"
+	</head> 
+
+<body>
+
+<header>
+      <div class="container">
+        <div id="branding">
+          <h2><span class="highlight">Ultimate</span> Computer Wiki</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="emulation.html">Emulation</a></li>  
+            <li><a href="games.html">Games</a></li>  
+            <li class="current"><a href="learn.html">Learning</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="websites.html">Websites</a></li>  
+          </ul>
+        </nav>
+      </div>
+    </header>
+       
+<section id="showcase">
+    
+    <div class = container>
+	
+    </div>
+
+</section> 
+    
+<center>        
+    
+<style>
+    a { color: #666666;
+    text-decoration: none;} 
+</style>
+    
+<input type="text" id="search" onkeyup="searchFunction('search', 0)" placeholder="Search by Name">
+    
+<input type="text" id="searchDescription" onkeyup="searchFunction('searchDescription', 1)" placeholder="Search by Description">          
+    
+<table id="List" class="tablesorter">
+      
+<thead>
+<tr class="header">
+   <th>Name</th>
+   <th>Description</th>
+   <th>Download</th> 
+</tr>
+</thead>
+    
+<tbody>  
+   
+<tr>
+    <td>Academic Earth</td>
+    <td>Find free online courses, lectures, and videos from the best colleges in the country. Take online classes from schools like Yale, MIT and Stanford.</td>
+    <td><a href="https://academicearth.org/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>Academy for Ads</td>
+    <td>Benefits. Gain new digital skills. Our bite-sized courses are ready whenever you are. Set aside a few minutes for training from your laptop or mobile device</td>
+    <td><a href="https://skillshop.withgoogle.com/">Link</a></td>
+</tr>	    
+    
+<tr>
+    <td>Codecademy</td>
+    <td>Codecademy is an online freemium interactive platform that offers free coding classes in 12 different programming languages including Python, Java, JavaScript, Ruby, SQL, and Sass, as well as markup languages HTML and CSS.</td>
+    <td><a href="https://www.codecademy.com/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>Coursera</td>
+    <td>Learn online and earn valuable credentials from top universities like Yale, Michigan, Stanford, and leading companies like Google and IBM.</td>
+    <td><a href="https://www.coursera.org/">Link</a></td>
+</tr>	    
+    
+<tr>
+    <td>Duolingo</td>
+    <td>Duolingo is the world's most popular way to learn a language. It's 100% free, fun and science-based.</td>
+    <td><a href="https://www.duolingo.com/">Link</a></td>
+</tr>
+
+<tr>
+    <td>GameDevelop.io</td>
+    <td>A resource website for game development.</td>
+    <td><a href="https://gamedevelop.io/">Link</a></td>
+</tr>
+    
+<tr>
+    <td>Google Digital Garage</td>
+    <td>Free online marketing training to get the digital skills you need to grow your business, your career. Free courses from Google to become a digital expert.</td>
+    <td><a href="https://learndigital.withgoogle.com/digitalgarage">Link</a></td>
+</tr>
+    
+<tr>
+    <td>The Khan Academy</td>
+    <td>You can learn anything. Expert-created content and resources for every subject and level. Always free.</td>
+    <td><a href="https://www.khanacademy.org/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>Udacity</td>
+    <td>Join Udacity to learn the latest in Deep Learning, Machine Learning, Web Development & more, with Nanodegree programs & free online courses.</td>
+    <td><a href="https://www.udacity.com/">Link</a></td>
+</tr>	
+    
+<tr>
+    <td>freelearninglist</td>
+    <td>The internet's best education resources.</td>
+    <td><a href="https://freelearninglist.org/">Link</a></td>
+</tr>
+    
+</tbody>
+</table>
+	    
+<script>
+              
+  $(document).ready(function()
+	{
+		$("#List").tablesorter({ sortList: [[0,0], [1,0]] });
+	}
+);        
+        
+</script>                    
+        
+<script>
+function searchFunction(key, id) {
+    
+  var input, filter, table, tr, td, i;
+  input = document.getElementById(key);
+  filter = input.value.toUpperCase();
+  table = document.getElementById("List");
+  tr = table.getElementsByTagName("tr");  
+  var format = id; 
+    
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[format];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>            
+    
+</center>	
+	
+<footer>
+    
+    <p>Copyright © 2020 LostPizzaMan. All Rights Reserved</p>
+        
+</footer>
+        
+</body>
+	
+</html>
+

@@ -1,0 +1,2731 @@
+<html> 
+	<head>
+        <script type="text/javascript" src="javascript\jquery-3.3.1.min.js"></script> 
+        <script type="text/javascript" src="javascript\jquery.tablesorter.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Ultimate Computer Wiki </title> 
+        <link rel="stylesheet" href="css/style.css"
+	</head> 
+
+<body>
+
+<header>
+      <div class="container">
+        <div id="branding">
+          <h2><span class="highlight">Ultimate</span> Computer Wiki</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="emulation.html">Emulation</a></li>  
+            <li><a href="games.html">Games</a></li>  
+            <li><a href="learn.html">Learning</a></li>
+            <li class="current"><a href="programs.html">Programs</a></li>
+            <li><a href="websites.html">Websites</a></li>  
+          </ul>
+        </nav>
+      </div>
+    </header>
+       
+<section id="showcase">
+    
+    <div class = container>
+	
+    </div>
+
+</section> 
+    
+<center>        
+    
+<style>
+    a { color: #666666;
+    text-decoration: none;} 
+</style>
+    
+<input type="text" id="search" onkeyup="searchFunction('search', 0)" placeholder="Search by Name">
+    
+<input type="text" id="searchDescription" onkeyup="searchFunction('searchDescription', 1)" placeholder="Search by Keyword">           
+    
+<select name="genres" id="genres" onchange="searchFunction('genres', 3)">
+    <option value="">All</option>
+       <option value="Audio">Audio</option>
+       <option value="Development">Development</option>    
+       <option value="File">File</option>
+       <option value="Gaming">Gaming</option>
+       <option value="Hardware">Hardware</option>
+       <option value="Image">Image</option>
+       <option value="Input">Input</option>
+       <option value="Install">Install</option>
+       <option value="Internet">Internet</option>      
+       <option value="Media">Media</option>
+       <option value="Modeling">Modeling</option>
+       <option value="Music">Music</option>
+       <option value="Networking">Networking</option>     
+       <option value="Office">Office</option>
+       <option value="OS">OS</option>
+       <option value="Personalization">Personalization</option>
+       <option value="Productivity">Productivity</option>
+       <option value="Screenshot">Screenshot</option>
+       <option value="Security">Security</option>
+       <option value="Social">Social</option>   
+       <option value="System Tools">System Tools</option>
+       <option value="Video">Video</option>
+</select>    
+
+<table id="List" class="tablesorter">
+      
+<thead>
+<tr class="header">
+   <th>Name</th>
+   <th>Description</th>
+   <th>Download</th> 
+   <th>Genre</th> 
+</tr>
+</thead>
+    
+<tbody>  
+   
+<tr>
+    <td>3DMark</td>
+    <td>3DMark includes everything you need to benchmark your PC, tablet and smartphone.</td>
+    <td><a href="https://benchmarks.ul.com/3dmark?">Download</a></td>
+    <td>Hardware</td>
+</tr>	
+	
+<tr>
+    <td>7+ Taskbar Tweaker</td>
+    <td>7+ Taskbar Tweaker allows you to configure various aspects of the Windows taskbar.</td>
+    <td><a href="http://rammichael.com/7-taskbar-tweaker">Download</a></td>
+    <td>System Tools</td>
+  </tr>	    
+    
+   <tr>
+    <td>7-Zip</td>
+    <td>A utility used to place groups of files within compressed containers known as "archives".</td>
+    <td><a href="https://www.7-zip.org/">Download</a></td>
+    <td>File</td>
+  </tr>
+  
+  <tr>
+    <td>AutoHotKey</td>
+    <td>AutoHotkey is a free, open-source custom scripting language for Microsoft Windows, initially aimed at providing easy keyboard shortcuts or hotkeys, fast macro-creation and software automation that allows users of most levels of computer skill to automate repetitive tasks in any Windows application.</td>
+    <td><a href="https://autohotkey.com/">Download</a></td>
+    <td>Productivity</td>
+  </tr>  
+    
+  <tr>
+    <td>AIMP</td>
+    <td>AIMP is a freeware audio player for Windows and Android, originally developed by Russian developer Artem Izmaylov.</td>
+    <td><a href="http://www.aimp.ru/">Download</a></td>
+    <td>Music</td>
+  </tr>  
+    
+ <tr>
+    <td>AOMEI Partition Assistant</td>
+    <td>AOMEI Partition Assistant Standard is the right one for your PC, guaranteeing you get the full features for creating, resizing, deleting, merging, splitting partition and more.</td>
+    <td><a href="https://www.disk-partition.com/free-partition-manager.html">Download</a></td>
+    <td>File</td>
+  </tr>     
+    
+<tr>
+    <td>AdwCleaner</td>
+    <td>The world’s most popular adware cleaner finds and removes unwanted programs and junkware 
+so your online experience stays optimal and hassle-free.</td>
+    <td><a href="https://www.malwarebytes.com/adwcleaner/">Download</a></td>
+    <td>Security</td>
+</tr>     
+    
+<tr>
+    <td>Aegisub</td>
+    <td>Aegisub is a free open-source cross-platform subtitle editing program. It is extensively used in fansubbing, the practice of creating or translating unofficial, noncommercial subtitles for visual media by fans.</td>
+    <td><a href="http://www.aegisub.org/">Download</a></td>
+    <td>Development</td>
+</tr>       
+    
+<tr>
+    <td>Agent Ransack</td>
+    <td>Agent Ransack is a free software program for finding files on your PC or network drives.</td>
+    <td><a href="https://www.mythicsoft.com/agentransack/">Download</a></td>
+    <td>File</td>
+</tr>
+  
+<tr>
+    <td>AndreaMosaic</td>
+    <td>AndreaMosaic is a freeware graphic art software developed and published by Andrea Denzler and that specializes in the creation of photographic mosaic images.</td>
+    <td><a href="http://www.andreaplanet.com/andreamosaic/">Download</a></td>
+    <td>Image Generation</td>
+</tr>
+    
+<tr>
+    <td>Android Studio</td>
+    <td>Android Studio is the official integrated development environment for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development.</td>
+    <td><a href="https://developer.android.com/studio/">Download</a></td>
+    <td>Development</td>
+</tr>   
+
+<tr>
+    <td>Ant Renamer</td>
+    <td>Ant Renamer is a program that makes easier to rename of files and folders by using specified settings.</td>
+    <td><a href="http://antp.be/software/renamer">Download</a></td>
+    <td>File</td>
+</tr>    
+    
+<tr>
+    <td>Anti-Twin</td>
+    <td>Anti-Twin is a small software application which compares files, i.e. it searches for duplicate or similar files on your hard disk drive.</td>
+    <td><a href="http://www.joerg-rosenthal.com/en/antitwin/">Download</a></td>
+    <td>File</td>
+</tr>     
+    
+<tr>
+    <td>Apophysis 7x</td>
+    <td>A version of the fractal flame editor Apophysis which is ready to take advantage of modern versions of Microsoft Windows, provides a big set of new features and has a polished user interface.</td>
+    <td><a href="https://sourceforge.net/projects/apophysis7x/">Download</a></td>
+    <td>Image Generation</td>
+</tr>   
+    
+<tr>
+    <td>A's Video Converter</td>
+    <td>This program is a video converter using AMD, Intel, NVIDIA and Microsoft Encoder.</td>
+    <td><a href="https://bluesky-soft.com/en/AsVideoConv.html">Download</a></td>
+    <td>Video Tools</td>
+</tr>      
+    
+<tr>
+    <td>Atom</td>
+    <td>Atom is a free and open-source text and source code editor for macOS, Linux, and Microsoft Windows with support for plug-ins written in Node.js, and embedded Git Control, developed by GitHub.</td>
+    <td><a href="https://atom.io/">Download</a></td>
+    <td>Development</td>
+</tr>
+    
+   <tr>
+    <td>Audacity</td>
+    <td>Audacity is a free open source digital audio editor and recording computer software application.</td>
+    <td><a href="https://www.audacityteam.org/">Download</a></td>
+    <td>Audio</td>
+  </tr>
+  
+   <tr>
+    <td>Audio Router</td>
+    <td>Per-application volume control.</td>
+    <td><a href="https://github.com/audiorouterdev/audio-router/releases">Download</a></td>
+    <td>Audio</td>
+  </tr> 
+  
+   <tr>
+    <td>AudioNodes</td>
+    <td>Create music and audio effects with AudioNodes, a free, modular music and audio production suite, with multi-track audio mixing, audio effects, parameter automation, MIDI editing, synthesis, and more.</td>
+    <td><a href="https://audionodes.com/">Download</a></td>
+    <td>Music</td>
+  </tr>     
+    
+  <tr>
+    <td>Audio Switcher</td>
+    <td>Audio Switcher is a free application for Windows Vista / 7 / 8 that helps you to change or switch default audio devices.</td>
+    <td><a href="https://audioswit.ch/er">Download</a></td>
+    <td>Audio</td>
+  </tr> 
+ 
+<tr>
+    <td>Authy</td>
+    <td>Two-factor authentication (2FA) adds an additional layer of protection beyond passwords. </td>
+    <td><a href="https://authy.com/">Download</a></td>
+    <td>Security</td>
+</tr> 
+
+<tr>
+    <td>AutoRuns</td>
+    <td>This utility, which has the most comprehensive knowledge of auto-starting locations of any startup monitor, shows you what programs are configured to run during system bootup or login, and when you start various built-in Windows applications like Internet Explorer, Explorer and media players.</td>
+    <td><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns">Download</a></td>
+    <td>System Tools</td>
+</tr>
+ 
+<tr>
+    <td>Avast Antivirus</td>
+    <td>Protect your devices with the best free antivirus on the market.</td>
+    <td><a href="https://www.avast.com/en-ca/index">Download</a></td>
+    <td>Security</td>
+</tr>
+    
+<tr>
+    <td>Avidemux</td>
+    <td>Avidemux is a free and open-source video editing program designed for video editing and video processing. It is written in C++, and uses either GTK+ or Qt for its user interface.</td>
+    <td><a href="http://avidemux.sourceforge.net/">Download</a></td>
+    <td>Video Editing</td>
+</tr>   
+
+<tr>
+    <td>BabelMap</td>
+    <td>BabelMap is a free character map application for Windows that allows you to browse through the entire Unicode character repertoire of nearly 137,000 characters, or search for a particular character by name or by code point.</td>
+    <td><a href="http://www.babelstone.co.uk/Software/BabelMap.html">Download</a></td>
+    <td>System Tools</td>
+</tr> 
+      
+<tr>
+    <td>Babun</td>
+    <td>A Windows shell you will love!</td>
+    <td><a href="http://babun.github.io/">Download</a></td>
+    <td>System Tools</td>
+</tr>   
+
+<tr>
+    <td>Balabolka</td>
+    <td>Balabolka is a Text-To-Speech (TTS) program.</td>
+    <td><a href="http://www.cross-plus-a.com/balabolka.htm">Download</a></td>
+    <td>Audio</td>
+</tr>
+    
+<tr>
+    <td>Bandizip</td>
+    <td>Bandizip is an all-in-one Zip Archiver.</td>
+    <td><a href="https://www.bandisoft.com/bandizip/">Download</a></td>
+    <td>File</td>
+</tr>     
+    
+<tr>
+    <td>Balsamiq</td>
+    <td>Unleash Your Creativity! Balsamiq is a rapid wireframing tool that helps you Work Faster & Smarter. It reproduces the experience of sketching on a whiteboard, but using a computer.</td>
+    <td><a href="https://balsamiq.com/">Download</a></td>
+    <td>Office</td>
+</tr>		
+		
+ <tr>
+    <td>Beyond Compare</td>
+    <td>Beyond Compare is a data comparison utility. Aside from comparing files, the program is capable of doing side-by-side comparison of directories, FTP and SFTP directories, Dropbox directories, Amazon S3 directories, and archives.</td>
+    <td><a href="https://www.scootersoftware.com/">Download</a></td>
+    <td>File</td>
+</tr>
+      
+ <tr>
+    <td>Bitdefender</td>
+    <td>Whether you need protection for a single device, smart home, small business or Enterprise datacenter, Bitdefender delivers the best security and performance.</td>
+    <td><a href="https://www.bitdefender.com/">Download</a></td>
+    <td>Security</td>
+</tr>    
+    
+<tr>
+    <td>Blender</td>
+    <td>Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games.</td>
+    <td><a href="https://www.blender.org/">Download</a></td>
+    <td>Modeling</td>
+</tr>
+
+<tr>
+    <td>Blizzard Launcher</td>
+    <td>Your Blizzard games are easily accessible so you can quickly jump in and start playing. When you're not playing, the app automatically updates each game to the latest version. Discover new adventures. Curious about a game you don't have installed? Give it a try right from its game tab. Most Blizzard games are free to try!</td>
+    <td><a href="https://www.blizzard.com/en-us/apps/battle.net/desktop">Download</a></td>
+    <td>Gaming Platform</td>
+</tr>
+        
+<tr>
+    <td>Borderless Gaming</td>
+    <td>Play your favorite games in a borderless window; no more time consuming alt-tabs.</td>
+    <td><a href="https://github.com/Codeusa/Borderless-Gaming">Download</a></td>
+    <td>Gaming Tools</td>
+</tr>    
+    
+<tr>
+    <td>Bosca Ceoil</td>
+    <td>A simple music making program.</td>
+    <td><a href="https://boscaceoil.net/">Download</a></td>
+    <td>Music</td>
+</tr>   
+
+<tr>
+    <td>Boss Detector</td>
+    <td>Boss Detector is a motion detector for your computer or mobile device. When it detects motion it will hide non-work windows and bring work to the foreground, making you always appear to be the model employee.</td>
+    <td><a href="https://bossdetector.com/">Download</a></td>
+    <td>Productivity</td>
+</tr>              
+ 
+<tr>
+    <td>Brackets</td>
+    <td>Brackets is an open-source editor written in HTML, CSS, and JavaScript with a primary focus on web development. It was created by Adobe Systems, licensed under the MIT License, and is currently maintained on GitHub.</td>
+    <td><a href="http://brackets.io/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>Brave</td>
+    <td>Brave is a free and open-source web browser based on the Chromium web browser and its Blink engine, announced by the co-founder of the Mozilla project and creator of JavaScript, Brendan Eich.</td>
+    <td><a href="https://brave.com/">Download</a></td>
+    <td>Internet</td>
+</tr>
+
+<tr>
+    <td>Bulk Rename Utility</td>
+    <td>Bulk Rename Utility allows you to easily rename files and entire folders based upon extremely flexible criteria.</td>
+    <td><a href="http://www.bulkrenameutility.co.uk/Main_Intro.php">Download</a></td>
+    <td>File</td>
+</tr>       
+        	  
+<tr>
+    <td>CCleaner</td>
+    <td>CCleaner is a utility program used to clean potentially unwanted files and invalid Windows Registry entries from a computer.</td>
+    <td><a href="https://www.ccleaner.com/">Download</a></td>
+    <td>System Tools</td>
+</tr>
+
+<tr>
+    <td>CDBurnerXP</td>
+    <td>Free CD, DVD, ISO, HD-DVD and Blu-Ray burning software with multi-language interface.</td>
+    <td><a href="https://cdburnerxp.se/en/home">Download</a></td>
+    <td>File</td>
+</tr>
+    
+<tr>
+    <td>CDex</td>
+    <td>CDex is a free software for Digital Audio Extraction from Audio CD and audio format conversion for Microsoft Windows. It converts CDDA tracks from a CD to standard computer sound files, such as WAV, MP3, or Ogg Vorbis.</td>
+    <td><a href="https://cdex.mu/">Download</a></td>
+    <td>Audio</td>
+</tr>    
+      
+<tr>
+    <td>CPU-Z</td>
+    <td>CPU-Z is a freeware system profiling and monitoring application for Microsoft Windows and Android that detects the central processing unit, RAM, motherboard chipset, and other hardware features of a modern personal computer or Android device.</td>
+    <td><a href="https://www.cpuid.com/softwares/cpu-z.html">Download</a></td>
+    <td>Hardware</td>
+</tr>
+        	  
+<tr>
+    <td>CRU</td>
+    <td>Custom Resolution Utility (CRU) allows custom resolutions to be defined for both AMD/ATI and NVIDIA GPUs by creating EDID overrides directly in the registry without dealing with .inf files.</td>
+    <td><a href="https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU">Download</a></td>
+    <td>Hardware</td>
+</tr>
+
+<tr>
+    <td>Caesium</td>
+    <td>Compress your pictures up to 90% without visible quality loss.</td>
+    <td><a href="https://saerasoft.com/caesium/">Download</a></td>
+    <td>Image Compression</td>
+</tr>
+    
+<tr>
+    <td>Calibre</td>
+    <td>Calibre is a cross-platform open-source suite of e-book software. Calibre supports organizing existing e-books into virtual libraries, displaying, editing, creating and conversion of e-books, as well as syncing e-books with a variety of e-readers.</td>
+    <td><a href="https://calibre-ebook.com/">Download</a></td>
+    <td>Office</td>
+</tr> 
+    
+<tr>
+    <td>Carnac</td>
+    <td>A keyboard logging and presentation utility for presentations, screencasts, and to help you become a better keyboard user.</td>
+    <td><a href="http://code52.org/carnac/">Download</a></td>
+    <td>Office</td>
+</tr>      
+		
+<tr>
+    <td>Chocolatey</td>
+    <td>The package manager for Windows</td>
+    <td><a href="https://chocolatey.org/">Download</a></td>
+    <td>Install</td>
+</tr>
+
+<tr>
+    <td>Classic Shell</td>
+    <td>Classic Shell is a computer software for Microsoft Windows that provides user interface elements intended to restore familiar features from past versions of Windows.</td>
+    <td><a href="http://www.classicshell.net/">Download</a></td>
+    <td>Personalization</td>
+</tr>
+    
+<tr>
+    <td>Clementine Music Player</td>
+    <td>Clementine is a free and open-source audio player. It is a port of Amarok 1.4 to the Qt 4 framework and the GStreamer multimedia framework. It is available for Unix-like, Windows and macOS.</td>
+    <td><a href="https://www.clementine-player.org/">Download</a></td>
+    <td>Music</td>
+</tr>
+
+<tr>
+    <td>Clicky Gone</td>
+    <td>Clicky Gone allows you to hide your selected windows from view, this includes the taskbar button associated with the application. This utility particularly helps with protecting your privacy by hiding things like your browser with banking details up and someone walks in on you.</td>
+    <td><a href="http://clickygone.sourceforge.net/">Download</a></td>
+    <td>Productivity</td>
+</tr>
+
+<tr>
+    <td>ClipX</td>
+    <td>ClipX is a tiny clipboard history manager for Windows.</td>
+    <td><a href="https://bluemars.org/clipx/">Download</a></td>
+    <td>Productivity</td>
+</tr>
+
+<tr>
+    <td>Clover 3</td>
+    <td>Clover Brings Chrome-Style Tabs to Windows Explorer.</td>
+    <td><a href="http://en.ejie.me/">Download</a></td>
+    <td>Personalization</td>
+</tr>
+    
+<tr>
+    <td>cmder</td>
+    <td>cmder is software package that provides great console experience even on Windows.</td>
+    <td><a href="http://cmder.net/">Download</a></td>
+    <td>System Tools</td>
+</tr>    
+    
+<tr>
+    <td>Cold Turkey Blocker</td>
+    <td>Cold Turkey Blocker is a free productivity program that you can use to temporarily block distractions so that you can get your work done!</td>
+    <td><a href="https://getcoldturkey.com/">Download</a></td>
+    <td>Productivity</td>
+</tr>  
+
+<tr>
+    <td>Colour Contrast Analyser</td>
+    <td>The Colour Contrast Analyser (CCA) helps you determine the legibility of text and the contrast of visual elements, such as graphical controls and visual indicators.</td>
+    <td><a href="https://developer.paciellogroup.com/resources/contrastanalyser/">Download</a></td>
+    <td>System Tools</td>
+</tr>  
+    
+<tr>
+    <td>CommandTrayHost</td>
+    <td>A command line program monitor systray for Windows.</td>
+    <td><a href="https://github.com/rexdf/CommandTrayHost">Download</a></td>
+    <td>System Tools</td>
+</tr>       
+    
+<tr>
+    <td>CompactGUI</td>
+    <td>CompactGUI is a standalone user interface that makes the Windows 10 compact.exe function easier to use.</td>
+    <td><a href="https://github.com/ImminentFate/CompactGUI">Download</a></td>
+    <td>System Tools</td>
+</tr>    
+    
+<tr>
+    <td>ConEmu</td>
+    <td>ConEmu is a free and open-source tabbed terminal emulator for Windows. ConEmu presents multiple consoles and simple GUI applications as one customizable GUI window with tabs and a status bar.</td>
+    <td><a href="https://conemu.github.io/">Download</a></td>
+    <td>System Tools</td>
+</tr>    
+    
+<tr>
+    <td>ConsoleZ</td>
+    <td>This is a modified version of Console 2 for a better experience under Windows Vista/7/8/10 and a better visual rendering.</td>
+    <td><a href="https://github.com/cbucher/console">Download</a></td>
+    <td>System Tools</td>
+</tr>  
+
+<tr>
+    <td>Control Pad</td>
+    <td>
+ControlPad turns the numeric keypad on your keyboard to a Windows command execution system.
+
+You may configure any numeric code to execute programs, open documents, open web pages or send series of keystrokes to the operating system.</td>
+    <td><a href="http://sector-seven.net/software/controlpad">Download</a></td>
+    <td>Productivity</td>
+</tr> 
+
+    <td>Cppcheck</td>
+    <td>Cppcheck is a static code analysis tool for the C and C++ programming languages. It is a versatile tool that can check non-standard code. The creator and lead developer is Daniel Marjamäki.</td>
+    <td><a href="http://cppcheck.sourceforge.net/">Download</a></td>
+    <td>Development</td>
+</tr> 
+    
+<tr>
+    <td>Cryptomator</td>
+    <td>Open Source client-side encryption for Dropbox, Google Drive, you name it. Protect your cloud files.</td>
+    <td><a href="https://cryptomator.org/">Download</a></td>
+    <td>Security</td>
+</tr>    
+
+<tr>
+    <td>CrystalDiskInfo</td>
+    <td>A HDD/SSD utility software which supports a part of USB, Intel RAID and NVMe.</td>
+    <td><a href="https://crystalmark.info/en/software/crystaldiskinfo/">Download</a></td>
+    <td>Hardware</td>
+</tr>
+
+<tr>
+    <td>CrystalDiskMark</td>
+    <td>CrystalDiskMark is a disk benchmark software.</td>
+    <td><a href="https://crystalmark.info/en/software/crystaldiskmark/">Download</a></td>
+    <td>Hardware</td>    
+</tr>     
+   
+<tr>
+    <td>CuteMarkEd</td>
+    <td>A Qt-based, free and open source Markdown editor with live HTML preview, math expressions, code and markdown syntax highlighting. See the features page for more information.</td>
+    <td><a href="https://cloose.github.io/CuteMarkEd/">Download</a></td>
+    <td>Development</td>    
+</tr>
+   
+<tr>
+    <td>DB Browser</td>
+    <td>DB Browser for SQLite is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.</td>
+    <td><a href="http://sqlitebrowser.org/">Download</a></td>
+    <td>Development</td>    
+</tr>       
+
+<tr>
+    <td>Display Driver Uninstaller</td>
+    <td>Display Driver Uninstaller is a driver removal utility that can help you completely uninstall AMD/NVIDIA graphics card drivers and packages from your system, without leaving leftovers behind (including registry keys, folders and files, driver store).</td>
+    <td><a href="http://www.guru3d.com/files-details/display-driver-uninstaller-download.html">Download</a></td>
+    <td>Hardware</td>    
+</tr>   
+
+<tr>
+    <td>DSpeech</td>
+    <td>DSpeech is a TTS (Text To Speech) program with functionality of ASR (Automatic Speech Recognition) integrated.</td>
+    <td><a href="http://dimio.altervista.org/eng/">Download</a></td>
+    <td>Audio</td>    
+</tr>        	   
+	   
+<tr>
+    <td>Daemon Tools</td>
+    <td>DAEMON Tools is a virtual drive and optical disc authoring program for Microsoft Windows and Mac OS.</td>
+    <td><a href="https://www.daemon-tools.cc/downloads">Download</a></td>
+    <td>File</td>
+</tr>      
+		
+<tr>
+    <td>darktable</td>
+    <td>darktable is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.</td>
+    <td><a href="https://www.darktable.org/">Download</a></td>
+    <td>Image Processing</td>
+</tr>        
+        
+<tr>
+    <td>Davinci Resolve</td>
+    <td>DaVinci Resolve 15 is the world's first solution that combines professional offline and online editing, color correction, audio post production and now visual effects all in one software tool</td>
+    <td><a href="https://www.blackmagicdesign.com/ca/products/davinciresolve/">Download</a></td>
+    <td>Video Editing</td>
+</tr>
+        	  
+<tr>
+    <td>Dimmer</td>
+    <td>Dimmer is a little free application designed to help control the brightness of your computer screen, specially to reduce the brightness beyond what the hardware alone is capable of. </td>
+    <td><a href="http://www.nelsonpires.com/software/dimmer/">Download</a></td>
+    <td>Personalization</td>
+</tr>
+
+<tr>
+    <td>Discord</td>
+    <td>Discord is a proprietary freeware VoIP application designed for gaming communities. </td>
+    <td><a href="https://discordapp.com/">Download</a></td>
+    <td>Social</td>
+</tr>
+      
+<tr>
+    <td>Disk Fan</td>
+    <td>Disk Space Fan 4 is a fast disk space analyzer and duplicate file remover software. </td>
+    <td><a href="http://www.diskspacefan.com/download.html">Download</a></td>
+    <td>File</td>
+</tr>
+    
+<tr>
+    <td>DisplayFusion</td>
+    <td>DisplayFusion will make your multi-monitor life much easier! With powerful features like Multi-Monitor Taskbars, TitleBar Buttons and fully customizable HotKeys, DisplayFusion will make managing your multiple monitors easy.</td>
+    <td><a href="https://www.displayfusion.com/">Download</a></td>
+    <td>Hardware</td>
+</tr>   
+
+<tr>
+    <td>Ditto</td>
+    <td>Ditto is an extension to the standard windows clipboard.</td>
+    <td><a href="https://ditto-cp.sourceforge.io/">Download</a></td>
+    <td>Productivity</td>
+</tr>   
+    
+<tr>
+    <td>Don't Panic!</td>
+    <td>Don't want to get busted by your boss or your teacher playing Solitaire, chatting or surfing the web? Close (hide or minimize) and open multiple programs with the click of a button. So you won't have to panic anymore...</td>
+    <td><a href="http://dont-panic.sourceforge.net/">Download</a></td>
+    <td>Productivity</td>
+</tr> 
+    
+<tr>
+    <td>Dopamine</td>
+    <td>Dopamine is an audio player which tries to make organizing and listening to music as simple and pretty as possible. It can play wav, mp3, ogg vorbis, flac, wma, ape, opus and m4a/aac.</td>
+    <td><a href="http://www.digimezzo.com/software/dopamine/">Download</a></td>
+    <td>Music</td>
+</tr>       
+
+<tr>
+    <td>Double Commander</td>
+    <td>Double Commander is an open source multi-platform two-panel orthodox file manager that is inspired by the Microsoft Windows-only Total Commander.</td>
+    <td><a href="https://doublecmd.sourceforge.io/">Download</a></td>
+    <td>File Manager</td>
+</tr>
+        
+<tr>
+    <td>DraftSight</td>
+    <td>DraftSight is a professional-grade 2D design and drafting solution that lets you create, edit, view and markup any kind of 2D drawing.</td>
+    <td><a href="https://www.3ds.com/products-services/draftsight-cad-software/">Download</a></td>
+    <td>Image Creation</td>
+</tr>        
+        	  
+<tr>
+    <td>Dropit</td>
+    <td>Application to automatically process and organize your files, to move, compress, extract, rename, delete, list, send by mail, encrypt, etc.</td>
+    <td><a href="http://www.dropitproject.com/">Download</a></td>
+    <td>File</td>
+</tr>  
+
+<tr>
+    <td>Dukto</td>
+    <td>Dukto is an easy file transfer tool designed for LAN use. </td>
+    <td><a href="https://sourceforge.net/projects/dukto/">Download</a></td>
+    <td>Networking</td>
+</tr>      			
+		
+<tr>
+    <td>Duplicati</td>
+    <td>Duplicati is a backup client that securely stores encrypted, incremental, compressed remote backups of local files on cloud storage services and remote file servers.</td>
+    <td><a href="https://www.duplicati.com/">Download</a></td>
+    <td>File Backup</td>
+</tr>       
+    
+<tr>
+    <td>Durazno</td>
+    <td>XInput wrapper that allows controller customization.</td>
+    <td><a href="https://github.com/KrossX/Durazno">Download</a></td>
+    <td>Input</td>
+</tr>      
+    
+<tr>
+    <td>ENCRYPTO</td>
+    <td>Encrypto takes any file or folder and adds AES-256 encryption to it. ... both can encrypt and send files to each other with Encrypto.</td>
+    <td><a href="https://macpaw.com/encrypto">Download</a></td>
+    <td>File Security</td>
+</tr>      
+		
+<tr>
+    <td>EarTrumpet</td>
+    <td>Per-application volume control.</td>
+    <td><a href="https://github.com/File-New-Project/EarTrumpet">Download</a></td>
+    <td>Audio</td>
+</tr>
+
+<tr>
+    <td>Easy Window Switcher</td>
+    <td>Easy Window Switcher makes switching between different windows as easy as alt + backtick.</td>
+    <td><a href="http://neosmart.net/EasySwitch/">Download</a></td>
+    <td>Productivity</td>
+</tr>
+
+<tr>
+    <td>Easy2Boot</td>
+    <td>A new USB multiboot solution. Just copy files to the USB drive and boot.</td>
+    <td><a href="http://www.easy2boot.com/">Download</a></td>
+    <td>OS</td>
+</tr>
+	
+<tr>
+    <td>Eclipse</td>
+    <td>"Desktop IDEs. Eclipse is famous for our Java Integrated Development Environment (IDE), but our C/C++ IDE and PHP IDE are pretty cool too. You can easily combine language support and other features into any of our default packages, and the Eclipse Marketplace allows for virtually unlimited customization and extension."</td>
+    <td><a href="https://www.eclipse.org/ide/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>Exact Audio Copy</td>
+    <td>Exact Audio Copy is a CD ripping program for Microsoft Windows. It has also been tested to work under newer versions of Wine on Linux.</td>
+    <td><a href="http://www.exactaudiocopy.de/">Download</a></td>
+    <td>Audio</td>
+</tr>
+
+<tr>
+    <td>Explorer++</td>
+    <td>Explorer++ is a lightweight and fast file manager for Windows.</td>
+    <td><a href="https://explorerplusplus.com/">Download</a></td>
+    <td>File Manager</td>
+</tr>
+
+<tr>
+    <td>Ext2Fsd</td>
+    <td>Ext2Fsd is a free Installable File System driver written in C for the Microsoft Windows operating system family. It facilitates read and write access to the ext2, ext3 and ext4 file systems.</td>
+    <td><a href="http://www.ext2fsd.com/">Download</a></td>
+    <td>File</td>
+</tr>
+
+<tr>
+    <td>FastStone Image Viewer</td>
+    <td>FastStone Image Viewer is an image viewer and organizer for Microsoft Windows, provided free of charge for personal and educational use, as of version 6.3. The program also includes basic image editing tools.</td>
+    <td><a href="http://www.faststone.org/">Download</a></td>
+    <td>Image Viewer</td>
+</tr>
+
+<tr>
+    <td>FFmpeg</td>
+    <td>FFmpeg is a free software project, the product of which is a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.</td>
+    <td><a href="https://www.ffmpeg.org/">Download</a></td>
+    <td>Video Codec</td>
+</tr>    
+
+<tr>
+    <td>Fiddler</td>
+    <td>Fiddler is an HTTP debugging proxy server application written by Eric Lawrence, formerly a Program Manager on the Internet Explorer development team at Microsoft.</td>
+    <td><a href="https://www.telerik.com/fiddler">Download</a></td>
+    <td>Networking</td>
+</tr>
+
+<tr>
+    <td>FileZilla</td>
+    <td>FileZilla is a free software, cross-platform FTP application, consisting of FileZilla Client and FileZilla Server. Client binaries are available for Windows, Linux, and macOS, server binaries are available for Windows only.</td>
+    <td><a href="https://filezilla-project.org/">Download</a></td>
+    <td>File</td>
+</tr>
+
+<tr>
+    <td>Firefox</td>
+    <td>Mozilla Firefox is a free and open-source web browser developed by Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox is available for Windows, macOS, Linux, and BSD operating systems.</td>
+    <td><a href="https://www.mozilla.org/en-US/firefox/new/">Download</a></td>
+    <td>Internet</td>
+</tr>   
+
+<tr>
+    <td>Flawless Widescreen</td>
+    <td>Flawless Widescreen was created in an effort to make it easier to craft fixes and patches to get games functioning correctly in UltraWide/Surround/Eyefinity gaming resolutions.</td>
+    <td><a href="https://www.flawlesswidescreen.org/">Download</a></td>
+    <td>Hardware</td>
+</tr>       
+        
+<tr>
+    <td>f.lux</td>
+    <td>f.lux is a cross-platform computer program that adjusts a display's color temperature according to location and time of day so that the eyes could rest.</td>
+    <td><a href="https://justgetflux.com/">Download</a></td>
+    <td>Personalization</td>
+</tr>
+
+<tr>
+    <td>FontForge</td>
+    <td>FontForge is a font editor which supports many common font formats. </td>
+    <td><a href="https://fontforge.github.io/en-US/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>foobar2000</td>
+    <td>foobar2000 is a freeware audio player for Microsoft Windows, iOS and Android developed by Peter Pawłowski.</td>
+    <td><a href="https://www.foobar2000.org/">Download</a></td>
+    <td>Music</td>
+</tr>
+
+<tr>
+    <td>FotoSketcher</td>
+    <td>Turn photo to painting, drawing, sketch or cartoon. FotoSketcher is a 100% free program to automatically turn your photos into beautiful art automatically.</td>
+    <td><a href="https://fotosketcher.com/">Download</a></td>
+    <td>Image Generation</td>
+</tr>
+        
+<tr>
+    <td>Foxit PDF Reader</td>
+    <td>Foxit Software, Inc. develops Portable Document Format software and tools used to create, edit, sign, and secure files and digital documents.</td>
+    <td><a href="https://www.foxitsoftware.com/pdf-reader/">Download</a></td>
+    <td>Office</td>
+</tr>
+
+<tr>
+    <td>Fraps</td>
+    <td>Fraps is a benchmarking, screen capture and screen recording utility for Windows developed by Beepa. It can capture from software that uses DirectX and OpenGL, such as PC games.</td>
+    <td><a href="http://www.fraps.com/">Download</a></td>
+    <td>Video Recording </td>
+</tr>
+      
+<tr>
+    <td>FireAlpaca</td>
+    <td>FireAlpaca is the free paint tool that is available in 10 languages and compatible with both Mac and Windows. Simple tools and controls let you draw an illustration easily.</td>
+    <td><a href="http://firealpaca.com/">Download</a></td>
+    <td>Image Creation</td>
+</tr>
+        
+<tr>
+    <td>FreeFileSync</td>
+    <td>FreeFileSync is a free and open source program used for file synchronization. It is available on Windows, Linux and OS X. The project is backed by donations and by the installation of OpenCandy malware during installation of the free edition.</td>
+    <td><a href="https://freefilesync.org/">Download</a></td>
+    <td>File</td>
+</tr>
+		
+<tr>
+    <td>FreeNAS</td>
+    <td>FreeNAS is a free and open-source network-attached storage software based on FreeBSD and the OpenZFS file system.</td>
+    <td><a href="http://www.freenas.org/">Download</a></td>
+    <td>Networking</td>
+</tr>    
+
+<tr>
+    <td>Frhed</td>
+    <td>Frhed is a binary file editor or hex editor for the Microsoft Windows platform.</td>
+    <td><a href="http://frhed.sourceforge.net/en/">Download</a></td>
+    <td>Development</td>
+</tr>  
+
+<tr>
+    <td>FreeOffice</td>
+    <td>FreeOffice is a complete office suite with a word processor, a spreadsheet application and a presentation program – all compatible with their counterparts in Microsoft Office.</td>
+    <td><a href="http://www.freeoffice.com/en/">Download</a></td>
+    <td>Office</td>
+</tr>     
+        
+<tr>
+    <td>Fusion 360</td>
+    <td>Fusion 360 free 3D CAD/CAM design software for students, educators, and academic institutions.</td>
+    <td><a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators">Download</a></td>
+    <td>Modeling</td>
+</tr>
+
+<tr>
+    <td>Fyre</td>
+    <td>Fyre is a tool for producing computational artwork based on histograms of iterated chaotic functions.</td>
+    <td><a href="http://fyre.navi.cx/about.shtml">Download</a></td>
+    <td>Image Generation</td>
+</tr>
+
+<tr>
+    <td>GIMP</td>
+    <td>GIMP is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.</td>
+    <td><a href="https://www.gimp.org/">Download</a></td>
+    <td>Image Creation</td>
+</tr>
+
+<tr>
+    <td>GOG Galaxy</td>
+    <td>The gaming Client designed for a convenient purchasing, playing and updating games, as well as an online play between gaming platforms, GOG Galaxy is also built with optionality in mind, and a belief that you should own the games you buy.</td>
+    <td><a href="https://www.gog.com/galaxy">Download</a></td>
+    <td>Gaming Platform</td>
+</tr>
+
+<tr>
+    <td>GPU-Z</td>
+    <td>GPU-Z is a lightweight utility designed to provide information about video cards and GPUs.</td>
+    <td><a href="https://www.techpowerup.com/gpuz/">Download</a></td>
+    <td>Hardware</td>
+</tr>
+
+<tr>
+    <td>gVim</td>
+    <td>gVim is a clone of Bill Joy's vi text editor program for Unix. It was written by Bram Moolenaar based on source for a port of the Stevie editor to the Amiga and first released publicly in 1991.</td>
+    <td><a href="https://sourceforge.net/projects/portablegvim/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+
+<tr>
+    <td>GamePipe</td>
+    <td>Game Pipe is an open-source game library management tool for Windows that allows you to move your Steam games around your PC and network with ease.</td>
+    <td><a href="https://github.com/DjScribbles/GamePipe">Download</a></td>
+    <td>Gaming Tools</td>
+</tr>
+      
+<tr>
+    <td>GameSave Manager</td>
+    <td>With GameSave Manager, you can easily backup, restore and transfer your gamesave(s).</td>
+    <td><a href="http://www.gamesave-manager.com/">Download</a></td>
+    <td>Gaming Tools</td>
+</tr>
+
+<tr>
+    <td>GeDoSaTo</td>
+    <td>The generic downSampling tool.</td>
+    <td><a href="https://github.com/PeterTh/gedosato">Download</a></td>
+    <td>System Tools</td>
+</tr>
+      
+<tr>
+    <td>Geek Uninstaller</td>
+    <td>GeekUninstaller performs deep and fast scanning after uninstall and removes all leftovers to keep your PC clean and in tip-top shape. </td>
+    <td><a href="https://geekuninstaller.com/">Download</a></td>
+    <td>Install</td>
+</tr>
+
+<tr>
+    <td>Git Extensions</td>
+    <td>Git Extensions is a standalone UI tool for managing git repositories.</td>
+    <td><a href="https://github.com/gitextensions/gitextensions">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>GitHub Desktop</td>
+    <td>Extend your GitHub workflow beyond your browser with GitHub Desktop, completely redesigned with Electron. Get a unified cross-platform experience that’s completely open source and ready to customize.</td>
+    <td><a href="https://desktop.github.com/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>GitKraken</td>
+    <td>GitKraken is the legendary Git GUI client for Windows, Mac and Linux. Git beginners and advanced users will increase efficiency through the intuitive interface, seamless integrations and a faster, more fluid workflow.</td>
+    <td><a href="https://www.gitkraken.com/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>Glary Utilities</td>
+    <td>Glary Utilities provides many more advanced features which are non existent in ccleaner.</td>
+    <td><a href="https://www.glarysoft.com/">Download</a></td>
+    <td>System Tools</td>
+</tr>
+    
+<tr>
+    <td>Glasswire</td>
+    <td>GlassWire is a modern personal firewall and network monitor with over 10 million downloads.</td>
+    <td><a href="https://www.glasswire.com/">Download</a></td>
+    <td>Networking</td>
+</tr>
+	  
+<tr>
+    <td>GnuPG</td>
+    <td>GNU Privacy Guard is a free software replacement for Symantec's PGP cryptographic software suite. GnuPG is compliant with RFC 4880, which is the IETF standards track specification of OpenPGP.</td>
+    <td><a href="https://www.gnupg.org/">Download</a></td>
+    <td>Networking</td>
+</tr>    
+        
+<tr>
+    <td>Google Chrome</td>
+    <td>Google Chrome is a freeware web browser developed by Google.</td>
+    <td><a href="https://www.google.ca/chrome/">Download</a></td>
+    <td>Internet</td>
+</tr>    
+
+<tr>
+    <td>Gopher360</td>
+    <td>Gopher360 is a free zero-config app that instantly turns your Xbox 360, Xbox One, or even DualShock controller into a mouse and keyboard. Just download, run, and relax.</td>
+    <td><a href="https://github.com/Tylemagne/Gopher360">Download</a></td>
+    <td>Input</td>
+</tr>   
+
+<tr>
+    <td>Gramps</td>
+    <td>Research, organize and share your family tree with Gramps. Gramps is a free software project and community. We strive to produce a genealogy program that is both intuitive for hobbyists and feature-complete for professional genealogists.</td>
+    <td><a href="https://gramps-project.org/introduction-WP/">Download</a></td>
+    <td>System Tools</td>
+</tr> 
+
+<tr>
+    <td>GraphicsGale</td>
+    <td>GraphicsGale is a animation graphic editor that is easy to use.</td>
+    <td><a href="https://graphicsgale.com/us/">Download</a></td>
+    <td>Video Animation</td>
+</tr>    
+
+<tr>
+    <td>Gravit Designer</td>
+    <td>Gravit Designer is a full-featured, free vector design app right at your fingertips.</td>
+    <td><a href="https://www.designer.io/">Download</a></td>
+    <td>Image Creation</td>
+</tr>     
+
+<tr>
+    <td>Greenfish Icon Editor Pro</td>
+    <td>Greenfish Icon Editor Pro is a powerful open source Image Creation, especially suitable for creating icons, cursors, animations and icon libraries.</td>
+    <td><a href="http://greenfishsoftware.org/gfie.php">Download</a></td>
+    <td>Image Creation</td>
+</tr>  
+      
+<tr>
+    <td>Greenshot</td>
+    <td>Greenshot is a free and open source screenshot program for Microsoft Windows.</td>
+    <td><a href="http://getgreenshot.org/downloads/">Download</a></td>
+    <td>Screenshot</td>
+</tr>    
+
+<tr>
+    <td>Gyazo</td>
+    <td>Gyazo is an open source and free screenshot program for Windows, Mac OS X and Linux.</td>
+    <td><a href="https://gyazo.com/">Download</a></td>
+    <td>Screenshot</td>
+</tr>  
+
+<tr>
+    <td>HTTrack</td>
+    <td>HTTrack is a free and open source Web crawler and offline browser, developed by Xavier Roche and licensed under the GNU General Public License Version 3. HTTrack allows users to download World Wide Web sites from the Internet to a local computer.</td>
+    <td><a href="https://www.httrack.com/">Download</a></td>
+    <td>Development</td>
+</tr>  
+        
+<tr>
+    <td>HWinfo</td>
+    <td>Hardware Info (HWiNFO) is a powerful system information utility designed especially for detection of hardware.</td>
+    <td><a href="https://www.hwinfo.com/">Download</a></td>
+    <td>Hardware</td>
+</tr>          
+        
+<tr>
+    <td>Handbrake</td>
+    <td>HandBrake is a free and open-source transcoder for digital video files, originally developed in 2003 by Eric Petit to make ripping a film from a DVD to a data storage device easier. Since then, it has undergone many changes and revisions.</td>
+    <td><a href="https://handbrake.fr/">Download</a></td>
+    <td>Video Codec</td>
+</tr>
+
+<tr>
+    <td>HeidiSQL</td>
+    <td>HeidiSQL is a free and open-source administration tool for MySQL and its forks, as well as Microsoft SQL Server and PostgreSQL. Its codebase was originally taken from Ansgar Becker's own MySQL-Front 2.5 software.</td>
+    <td><a href="https://www.heidisql.com/">Download</a></td>
+    <td>Development</td>
+</tr>
+       
+<tr>
+    <td>HexChat</td>
+    <td>HexChat, an open-source, cross-platform IRC client.</td>
+    <td><a href="https://hexchat.github.io/">Download</a></td>
+    <td>Social</td>
+</tr>
+        	  
+<tr>
+    <td>HitFilm Express</td>
+    <td>HitFilm Express is a free video editing software with professional-grade VFX tools and everything you need to make awesome content, films or gaming videos. Perfect for beginners, film students, gamers, YouTubers, or any creative without a budget.</td>
+    <td><a href="https://hitfilm.com/express">Download</a></td>
+    <td>Video Editing</td>
+</tr>
+
+<tr>
+    <td>Hot Spot Studio</td>
+    <td>This fun little freeware toy lets you create stunning looking images.</td>
+    <td><a href="http://www.rlvision.com/spots/about.php">Download</a></td>
+    <td>Image Generation</td>
+</tr>
+        
+<tr>
+    <td>HWMonitor</td>
+    <td>HWMonitor is a hardware monitoring program that reads PC systems main health sensors : voltages, temperatures, fans speed.</td>
+    <td><a href="https://www.cpuid.com/softwares/hwmonitor.html">Download</a></td>
+    <td>Hardware</td>
+</tr>
+        
+<tr>
+    <td>HxD</td>
+    <td>HxD is a carefully designed and fast hex editor which, additionally to raw disk editing and modifying of main memory (RAM), handles files of any size.</td>
+    <td><a href="https://mh-nexus.de/en/hxd/">Download</a></td>
+    <td>Development</td>
+</tr>  
+
+<tr>
+    <td>Hyper</td>
+    <td>A terminal built on web technologies.</td>
+    <td><a href="https://hyper.is/">Download</a></td>
+    <td>System Tools</td>
+</tr>       
+
+<tr>
+    <td>IIS Crypto</td>
+    <td>IIS Crypto is a free tool that gives administrators the ability to enable or disable protocols, ciphers, hashes and key exchange algorithms on Windows Server 2008, 2012 and 2016.</td>
+    <td><a href="https://www.nartac.com/Products/IISCrypto">Download</a></td>
+    <td>Security</td>
+</tr>    
+  
+<tr>
+    <td>IObit Unlocker</td>
+    <td>IObit Unlocker performs well in solving “cannot delete files”, “access is denied”, “The file is in use by another program or user", or "There has been a sharing violation” problems. With IObit Unlocker, you can manage all your files the way you want.</td>
+    <td><a href="https://www.iobit.com/en/iobit-unlocker.php">Download</a></td>
+    <td>File Deletion</td>
+</tr> 
+  
+<tr>
+    <td>ImageMagick</td>
+    <td>ImageMagick is a free and open-source software suite for displaying, converting, and editing raster image and vector image files. It can read and write over 200 image file formats. </td>
+    <td><a href="https://www.imagemagick.org/script/index.php">Download</a></td>
+    <td>Image Viewer</td>
+</tr>   
+
+<tr>
+    <td>ImgBurn</td>
+    <td>ImgBurn is an optical disc authoring program that allows the recording of many types of CD, DVD and Blu-Ray images to recordable media. Starting with version 2.0.0.0, ImgBurn can also burn files and data directly to CD or DVD. It is written in C++.</td>
+    <td><a href="http://www.imgburn.com/">Download</a></td>
+    <td>File</td>
+</tr>       
+      
+<tr>
+    <td>Inkscape</td>
+    <td>Inkscape is a free and open-source vector graphics editor; it can be used to create or edit vector graphics such as illustrations, diagrams, line arts, charts, logos and complex paintings.</td>
+    <td><a href="https://inkscape.org/en/">Download</a></td>
+      <td>Image Creation</td>
+</tr>
+
+<tr>
+    <td>InputMapper</td>
+    <td>InputMapper is designed to bridge the gap between the devices you use and the games you play.</td>
+    <td><a href="https://inputmapper.com/">Download</a></td>
+    <td>Input</td>
+</tr>
+
+<tr>
+    <td>Insomnia</td>
+    <td>Insomnia is a REST client with a great looking interface.</td>
+    <td><a href="https://insomnia.rest/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>IntelliJ IDEA</td>
+    <td>IntelliJ IDEA is a Java integrated development environment for developing computer software. It is developed by JetBrains, and is available as an Apache 2 Licensed community edition, and in a proprietary commercial edition.</td>
+    <td><a href="https://www.jetbrains.com/idea/">Download</a></td>
+    <td>Development</td>
+</tr>
+        	  
+<tr>
+    <td>IrfanView</td>
+    <td>IrfanView is an image viewer, editor, organiser and converter program for Microsoft Windows. It can also play video and audio files, and has some image creation and painting capabilities.</td>
+    <td><a href="https://www.irfanview.com/">Download</a></td>
+    <td>Image Viewer</td>
+</tr>   
+         	  
+<tr>
+    <td>Iridium</td>
+    <td>Iridium Browser is based on the Chromium code base. All modifications enhance the privacy of the user and make sure the most secure technologies are used.</td>
+    <td><a href="https://iridiumbrowser.de/">Download</a></td>
+    <td>Internet</td>
+</tr>     
+
+<tr>
+    <td>JDownloader</td>
+    <td>JDownloader is a download manager, written in Java, which allows automatic download of groups of files from one-click hosting sites. JDownloader supports the use of premium accounts. Some parts, but not all, of JDownloader are open source.</td>
+    <td><a href="http://jdownloader.org/">Download</a></td>
+    <td>Internet</td>
+</tr> 
+
+<tr>
+    <td>JWildfire</td>
+    <td>JWildfire is a free and user-friendly image-processing software, mostly known for its sophisticated flame-fractal-generator.</td>
+    <td><a href="http://jwildfire.org/">Download</a></td>
+    <td>Image Generation</td>
+</tr> 
+    
+<tr>
+    <td>Java Decompiler</td>
+    <td>JD is a Decompiler for the Java programming language. JD is provided as a GUI tool as well as in the form of plug-ins for the Eclipse and IntelliJ IDEA integrated development environments.</td>
+    <td><a href="http://jd.benow.ca/">Download</a></td>
+    <td>Development</td>
+</tr>    
+    
+<tr>
+    <td>Jing</td>
+    <td>Jing is a screencasting computer program launched in 2007 as Jing Project by the TechSmith Corporation. The software takes a picture or video of the user's computer screen and uploads it to the Web, FTP, computer or clipboard.</td>
+    <td><a href="https://www.techsmith.com/jing-tool.html">Download</a></td>
+    <td>Screenshot</td>
+</tr>      
+        
+<tr>
+    <td>JoyToKey</td>
+    <td>JoyToKey enables PC game controllers to emulate a mouse and the keyboard input, so that windows applications and web games can be controlled with joysticks.</td>
+    <td><a href="https://joytokey.net/en/">Download</a></td>
+    <td>Input</td>
+</tr> 
+
+<tr>
+    <td>K-3D</td>
+    <td>K-3D is free-as-in-freedom 3D modeling and animation software. It combines flexible plugins with a visualization pipeline architecture, making K-3D a versatile and powerful tool for artists.</td>
+    <td><a href="http://www.k-3d.org/">Download</a></td>
+    <td>Modeling</td>
+</tr>          
+        
+<tr>
+    <td>K-Lite Codec Pack</td>
+    <td>The K-Lite Codec Pack is a collection of audio and video codecs for Microsoft Windows that enables an operating system and its software to play various audio and video formats generally not supported by the operating system itself.</td>
+    <td><a href="https://www.codecguide.com/download_kl.htm">Download</a></td>
+    <td>Video Codec</td>
+</tr>          
+        
+<tr>
+    <td>Kodi</td>
+    <td>Kodi is a free and open-source media player software application developed by the XBMC Foundation, a non-profit technology consortium.</td>
+    <td><a href="https://kodi.tv/">Download</a></td>
+    <td>Media</td>
+</tr>    
+
+<tr>
+    <td>KatMouse</td>
+    <td>The prime purpose of the KatMouse utility is to enhance the functionality of mice with a scroll wheel, offering "universal" scrolling: moving the mouse wheel will scroll the window directly beneath the mouse cursor (not the one with the keyboard focus, which is default on Windows).</td>
+    <td><a href="http://ehiti.de/katmouse/">Download</a></td>
+    <td>Productivity</td>
+</tr>      
+        
+<tr>
+    <td>KeePass</td>
+    <td>KeePass Password Safe is a free and open-source password manager primarily for Windows.</td>
+    <td><a href="https://keepass.info/">Download</a></td>
+    <td>Security</td>
+</tr>   
+
+<tr>
+    <td>Keypirinha</td>
+    <td>Keypirinha is a fast launcher for keyboard ninjas on Windows.</td>
+    <td><a href="http://keypirinha.com/">Download</a></td>
+    <td>Productivity</td>
+</tr>   
+
+<tr>
+    <td>KiTTY</td>
+    <td>KiTTY is a fork from version 0.70 of PuTTY, the best telnet / SSH client in the world.</td>
+    <td><a href="http://www.9bis.net/kitty/">Download</a></td>
+    <td>Networking</td>
+</tr>     
+                
+<tr>
+    <td>Krita</td>
+    <td>Krita is a free-software and an open-source raster graphics editor, designed primarily for digital painting and animation purposes.</td>
+    <td><a href="https://krita.org/en/">Download</a></td>
+      <td>Image Creation</td>
+</tr>
+
+<tr>
+    <td>LAV Filters</td>
+    <td>LAV Filters are a set of DirectShow filters based on the libavformat and libavcodec libraries
+from the ffmpeg project, which will allow you to play virtually any format in a DirectShow player.
+</td>
+    <td><a href="https://github.com/Nevcairiel/LAVFilters">Download</a></td>
+    <td>Video Codec</td>
+</tr>
+
+<tr>
+    <td>LICEcap</td>
+    <td>LICEcap can capture an area of your desktop and save it directly to .GIF (for viewing in web browsers, etc) or .LCF.</td>
+    <td><a href="https://www.cockos.com/licecap/">Download</a></td>
+    <td>Screenshot</td>
+</tr>
+        
+<tr>
+    <td>LMMS</td>
+    <td>LMMS is a digital audio workstation application program. When LMMS is executed on a computer with appropriate hardware.</td>
+    <td><a href="https://lmms.io/">Download</a></td>
+    <td>Music</td>
+</tr>         
+                
+<tr>
+    <td>LaTeX</td>
+    <td>LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.</td>
+    <td><a href="https://www.latex-project.org/">Download</a></td>
+    <td>Office</td>
+</tr>
+
+<tr>
+    <td>Lagarith</td>
+    <td>Lagarith is a lossless video codec intended for editing and archiving.</td>
+    <td><a href="https://lags.leetcode.net/codec.html">Download</a></td>
+    <td>Video Codec</td>
+</tr>
+
+<tr>
+    <td>LatencyMon</td>
+    <td>LatencyMon checks if a system running Windows is suitable for processing real-time audio and other tasks.</td>
+    <td><a href="http://www.resplendence.com/latencymon">Download</a></td>
+    <td>System Tools</td>
+</tr>
+
+<tr>
+    <td>Launchy</td>
+    <td>Launchy is a free and open-source application launcher for Windows, Mac OS X, FreeBSD and Linux. It indexes shortcuts in the start menu, and files in specific folders, to allow quicker access to programs.</td>
+    <td><a href="https://www.launchy.net/">Download</a></td>
+    <td>Personalization</td>
+</tr>
+      
+<tr>
+    <td>LibreOffice</td>
+    <td>LibreOffice is a powerful office suite – its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity. 
+LibreOffice includes several applications that make it the most powerful Free and Open Source office suite on the market.</td>
+    <td><a href="https://www.libreoffice.org/">Download</a></td>
+    <td>Office</td>
+</tr>   
+
+<tr>
+    <td>LibreCAD</td>
+    <td>LibreCAD is a free Open Source CAD application for Windows, Apple and Linux.</td>
+    <td><a href="http://librecad.org/">Download</a></td>
+    <td>Modeling</td>
+</tr>
+
+<tr>
+    <td>Light Table</td>
+    <td>Light Table is an integrated development environment for software engineering developed by Chris Granger and Robert Attorri. It features real-time feedback allowing instant execution, debugging and access to documentation.</td>
+    <td><a href="http://lighttable.com/">Download</a></td>
+    <td>Development</td>
+</tr>    
+
+<tr>
+    <td>LightBulb</td>
+    <td>LightBulb is an application that reduces eyestrain produced by staring at a computer screen when working late hours. As the day goes on, it continuously adjusts gamma, transitioning the display color temperature from cold blue in the afternoon to warm yellow during the night.</td>
+    <td><a href="https://github.com/Tyrrrz/LightBulb">Download</a></td>
+    <td>Personalization</td>
+</tr>                 
+       
+<tr>
+    <td>LightShot</td>
+    <td>The fastest way to take a customizable screenshot.</td>
+    <td><a href="https://app.prntscr.com/en/index.html">Download</a></td>
+    <td>Screenshot</td>
+</tr>    
+
+<tr>
+    <td>Lightscreen</td>
+    <td>Lightscreen is a lightweight screen shooting application for Microsoft Windows used to automate the process of saving and cataloging screenshots.</td>
+    <td><a href="http://lightscreen.com.ar/">Download</a></td>
+    <td>Screenshot</td>
+</tr> 
+    
+<tr>
+    <td>Lightworks</td>
+    <td>Lightworks is a professional non-linear editing system for editing and mastering digital video in various formats, including 2K and 4K resolutions, and television in PAL, NTSC, and high-definition formats.</td>
+    <td><a href="https://www.lwks.com/">Download</a></td>
+    <td>Video Editing</td>
+</tr>
+
+<tr>
+    <td>Link Shell Extension</td>
+    <td>Link Shell Extension allows you to create symlinks from Explorer. </td>
+    <td><a href="http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html">Download</a></td>
+    <td>Development</td>
+</tr>
+        	  
+<tr>
+    <td>Linux</td>
+    <td>Linux is a family of free and open-source software operating systems built around the Linux kernel. </td>
+    <td><a href="https://www.linux.org/">Download</a></td>
+    <td>OS</td>
+</tr>
+
+<tr>
+    <td>Listary</td>
+    <td>Listary is a desktop search utility for Windows that can search for files on a computer. It works with items in File Explorer, Task Manager, Registry Editor, Windows Desktop, and "Open..." or "Save..." dialog boxes.</td>
+    <td><a href="http://www.listary.com/">Download</a></td>
+    <td>File</td>
+</tr>
+
+<tr>
+    <td>mIRC</td>
+    <td>mIRC is an Internet Relay Chat client for Windows, created in 1995 and developed by Khaled Mardam-Bey. It is a fully functional chat utility, and its integrated scripting language makes it extensible and versatile.</td>
+    <td><a href="https://www.mirc.com/">Download</a></td>
+    <td>Social</td>
+</tr>
+
+<tr>
+    <td>MKVToolNix</td>
+    <td>MKVToolNix is a collection of tools for the Matroska media container format by Moritz Bunkus including mkvmerge.</td>
+    <td><a href="https://mkvtoolnix.download/">Download</a></td>
+    <td>Video Codec</td>
+</tr>
+
+<tr>
+    <td>MP4Tools</td>
+    <td>MP4tools is the part of the VIDEOtoolbox Suite of Applications used for the creation and editing of MP4 videos. It was primarily designed for processing videos files for use in hardware capable of playing MP4 or M4V videos, such as the iPhone, iPad, Apple TV and PS3.</td>
+    <td><a href="http://www.emmgunn.com/mp4tools-home/">Download</a></td>
+    <td>Video Editing</td>
+</tr>
+
+<tr>
+    <td>Media Player Classic</td>
+    <td>Media Player Classic is a compact media player for 32-bit and 64-bit Microsoft Windows. MPC mimics the look and feel of Windows Media Player 6.4, but provides most options and features available in modern media players.</td>
+    <td><a href="https://mpc-hc.org/">Download</a></td>
+    <td>Video Player</td>
+</tr>
+
+<tr>
+    <td>MediaInfo</td>
+    <td>MediaInfo is a free and open-source program that displays technical information about media files, as well as tag information for many audio and video files.</td>
+    <td><a href="https://mediaarea.net/en/MediaInfo">Download</a></td>
+    <td>Video Tools</td>
+</tr>
+
+<tr>
+    <td>mpv</td>
+    <td>mpv is media player software, based on MPlayer and mplayer2.</td>
+    <td><a href="https://mpv.io/">Download</a></td>
+    <td>Video Player</td>
+</tr>
+
+<tr>
+    <td>mRemoteNG</td>
+    <td>The next generation of mRemote, open source, tabbed, multi-protocol, remote connections manager.</td>
+    <td><a href="https://mremoteng.org/">Download</a></td>
+    <td>Networking</td>
+</tr>
+	  
+<tr>
+    <td>MSI Afterburner</td>
+    <td>MSI Afterburner is the world's most recognized and widely used graphics card overclocking utility which gives you full control of your graphics cards.</td>
+    <td><a href="https://www.msi.com/page/afterburner">Download</a></td>
+    <td>Hardware</td>
+</tr>    
+
+<tr>
+    <td>MTPuTTY</td>
+    <td>MTPuTTY (Multi-Tabbed PuTTY). Multi-Tabbed PuTTY PuTTY is the most popular SSH client for Windows.</td>
+    <td><a href="http://ttyplus.com/multi-tabbed-putty/">Download</a></td>
+    <td>Networking</td>
+</tr> 
+    
+<tr>
+    <td>Macrium Reflect</td>
+    <td>Macrium Reflect is a backup and disk imaging software program for Microsoft Windows developed by Paramount Software UK Ltd in 2006.</td>
+    <td><a href="https://www.macrium.com/reflectfree">Download</a></td>
+    <td>File Backup</td>
+</tr>
+
+<tr>
+    <td>MadVR</td>
+    <td>madVR is a high quality DirectShow video renderer.</td>
+    <td><a href="http://madvr.com/">Download</a></td>
+    <td>Video Codec</td>
+</tr>
+        
+<tr>
+    <td>Magical Jelly Bean Keyfinder</td>
+    <td>The Magical Jelly Bean Keyfinder is a freeware utility that retrieves your Product Key (cd key) used to install windows from your registry. It also has a community-updated configuration file that retrieves product keys for many other applications. Another feature is the ability to retrieve product keys from unbootable Windows installations.</td>
+    <td><a href="https://www.magicaljellybean.com/keyfinder/">Download</a></td>
+    <td>System Tools</td>
+</tr>   
+
+<tr>
+    <td>MailBird</td>
+    <td>Mailbird is a desktop email client for Windows 7, 8 and 10, inspired by the Sparrow email client for OS X.</td>
+    <td><a href="https://www.getmailbird.com/">Download</a></td>
+    <td>Internet</td>
+</tr>     
+
+<tr>
+    <td>Mailspring</td>
+    <td>Boost your productivity and send better email with Mailspring, the best mail client for Mac, Linux, and Windows.</td>
+    <td><a href="https://getmailspring.com/">Download</a></td>
+    <td>Internet</td>
+</tr>  
+        
+<tr>
+    <td>Malwarebytes</td>
+    <td>Malwarebytes is an anti-malware software for Microsoft Windows, macOS, and Android that finds and removes malware.</td>
+    <td><a href="https://www.malwarebytes.com/">Download</a></td>
+    <td>Security</td>
+</tr>
+
+<tr>
+    <td>Mamp</td>
+    <td>MAMP installs a local server environment in a matter of seconds on your Mac or Windows computer.</td>
+    <td><a href="https://www.mamp.info/en/">Download</a></td>
+    <td>Networking</td>
+</tr>
+
+<tr>
+    <td>Mandelbulber</td>
+    <td>Mandelbulber is an experimental application that helps to make rendering 3D Mandelbrot fractals much more accessible.</td>
+    <td><a href="http://www.mandelbulber.com/">Download</a></td>
+    <td>Modeling</td>
+</tr>
+
+<tr>
+    <td>MapTiler</td>
+    <td>MapTiler transforms raster maps into a format suitable for web applications, mobile devices and 3D visualisation.</td>
+    <td><a href="https://www.maptiler.com/desktop/">Download</a></td>
+      <td>Image Generation</td>
+</tr>  
+    
+<tr>
+    <td>MediaMonkey</td>
+    <td>MediaMonkey for Windows is a digital media player and media library application developed by Ventis Media Inc, for organizing and playing audio on Microsoft Windows operating systems.</td>
+    <td><a href="http://www.mediamonkey.com/">Download</a></td>
+    <td>Media</td>
+</tr>   
+
+<tr>
+    <td>Medieval CUE Splitter</td>
+    <td>"Medieval CUE Splitter is a freeware tool that splits a single big audio file, mostly an album or a compilation, into the relative independent audio tracks, using the informations stored in its associated .CUE file; without decoding/re-encoding the data stream!!!"</td>
+    <td><a href="http://www.medieval.it/cuesplitter-pc/menu-id-71.html">Download</a></td>
+    <td>Audio</td>
+</tr>     
+
+<tr>
+    <td>Meld</td>
+    <td>Meld is the visual diff and merge tool of GNOME, targeted at developers. It allows users to compare two or three files or directories visually, color-coding the different lines.</td>
+    <td><a href="http://meldmerge.org/">Download</a></td>
+    <td>File</td>
+</tr>  
+
+<tr>
+    <td>MiniTool Partition Wizard</td>
+    <td>MiniTool Partition Wizard is a partition management program for hard disk drives developed by MiniTool Solutions. The software comes in three editions, Free Edition, Professional Edition and Business Edition.</td>
+    <td><a href="https://www.partitionwizard.com/free-partition-manager.html">Download</a></td>
+    <td>File</td>
+</tr> 
+
+<tr>
+    <td>Mixxx</td>
+    <td>Mixxx is free and open-source software for DJing. It is cross-platform and supports most common music file formats. Mixxx can be controlled with MIDI and HID controllers and timecode vinyl records in addition to computer keyboards and mice.</td>
+    <td><a href="https://www.mixxx.org/">Download</a></td>
+    <td>Music</td>
+</tr> 
+
+<tr>
+    <td>MobaXterm</td>
+    <td>MobaXterm is your ultimate toolbox for remote computing. In a single Windows application, it provides loads of functions that are tailored for programmers, webmasters, IT administrators and pretty much all users who need to handle their remote jobs in a more simple fashion.</td>
+    <td><a href="https://mobaxterm.mobatek.net/">Download</a></td>
+    <td>Networking</td>
+</tr> 
+        
+<tr>
+    <td>Moonlight Game Streaming</td>
+    <td>Moonlight allows you to stream your collection of games from your PC to another device.</td>
+    <td><a href="http://moonlight-stream.com/">Download</a></td>
+    <td>Gaming</td>
+</tr>        
+      
+<tr>
+    <td>MuseScore</td>
+    <td>MuseScore is a free scorewriter for Windows, macOS, and Linux, comparable to Finale and Sibelius, supporting a wide variety of file formats and input methods. It is released as free and open-source software under the GNU General Public License.</td>
+    <td><a href="https://musescore.org/en">Download</a></td>
+    <td>Music</td>
+</tr>         
+                
+<tr>
+    <td>Music Player Daemon</td>
+    <td>Music Player Daemon is a free and open music player server. It plays audio files, organizes playlists and maintains a music database. In order to interact with it, a client program is needed.</td>
+    <td><a href="https://www.musicpd.org/">Download</a></td>
+    <td>Music</td>
+</tr>                 
+        
+<tr>
+    <td>MusicBee</td>
+    <td>MusicBee is a freeware media player for playback and organization of audio files on Microsoft Windows, built using the BASS audio library.</td>
+    <td><a href="https://getmusicbee.com/">Download</a></td>
+    <td>Music</td>
+</tr>
+    
+<tr>
+    <td>MusicBrainz Picard</td>
+    <td>MusicBrainz Picard is a free and open-source software application for identifying, tagging, and organising digital audio recordings.</td>
+    <td><a href="https://picard.musicbrainz.org/">Download</a></td>
+    <td>Music</td>
+</tr>   
+    
+<tr>
+    <td>Multi Commander</td>
+    <td>Multi Commander is a multi-tabbed file manager and is an alternative to the standard Windows Explorer.</td>
+    <td><a href="http://multicommander.com/">Download</a></td>
+    <td>File Manager</td>
+</tr>   
+
+<tr>
+    <td>MyPaint</td>
+    <td>MyPaint is a free and open-source raster graphics editor for digital painters with a focus on painting rather than image manipulation or post processing.</td>
+    <td><a href="http://mypaint.org/about/">Download</a></td>
+      <td>Image Creation</td>
+</tr>  
+
+<tr>
+    <td>namebench</td>
+    <td>"Are you a power-user with 5 minutes to spare? Do you want a faster internet experience? Try out namebench. It hunts down the fastest DNS servers available for your computer to use."</td>
+    <td><a href="https://code.google.com/archive/p/namebench/">Download</a></td>
+    <td>Networking</td>
+</tr> 
+
+<tr>
+    <td>Neovim</td>
+    <td>The Nvim msgpack API enables structured communication to and from any programming language. Remote plugins run as co-processes that communicate with Neovim safely and asynchronously.</td>
+    <td><a href="https://neovim.io/">Download</a></td>
+    <td>Development</td>
+</tr> 
+
+<tr>
+    <td>NetBeans</td>
+    <td>NetBeans is an integrated development environment for Java. NetBeans allows applications to be developed from a set of modular software components called modules.</td>
+    <td><a href="https://netbeans.org/">Download</a></td>
+    <td>Development</td>
+</tr> 
+
+<tr>
+    <td>NetLimiter</td>
+    <td>NetLimiter is a client-side traffic shaping, monitoring and firewall software for the Windows operating system. Unlike most traffic-shaping utilities, which are based on centrally managed hardware, NetLimiter is a software-only solution.</td>
+    <td><a href="https://www.netlimiter.com/">Download</a></td>
+    <td>Networking</td>
+</tr> 
+        
+<tr>
+    <td>Ninite</td>
+    <td>Ninite is a package management system offering that lets users automatically install popular applications for their Windows operating system.</td>
+    <td><a href="https://ninite.com/">Download</a></td>
+    <td>Install</td>
+</tr>             
+        	  
+<tr>
+    <td>Notepad++</td>
+    <td>A free source code editor which supports several programming languages running under the MS Windows environment.</td>
+    <td><a href="https://notepad-plus-plus.org/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>Notepad2</td>
+    <td>Notepad2 is a free and open-source text editor for Microsoft Windows, released under a BSD software license.</td>
+    <td><a href="http://www.flos-freeware.ch/notepad2.html">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>O&O ShutUp10</td>
+    <td>O&O ShutUp10 means you have full control over which comfort functions under Windows 10 you wish to use, and you decide when the passing on of your data goes too far.</td>
+    <td><a href="https://www.oo-software.com/en/shutup10">Download</a></td>
+    <td>Security</td>
+</tr>    
+    
+<tr>
+    <td>Open Broadcaster Software</td>
+    <td>Open Broadcaster Software is a free and open-source streaming and recording program maintained by the OBS Project.</td>
+    <td><a href="https://obsproject.com/">Download</a></td>
+    <td>Video Recording</td>
+</tr>
+
+<tr>
+    <td>One Commander</td>
+    <td>One Commander is file manager for Microsoft Windows with improved functionality, re-imagined user interface and experience of navigating filesystem and manipulating files.</td>
+    <td><a href="http://onecommander.com/">Download</a></td>
+    <td>File Manager</td>
+</tr>
+    
+<tr>
+    <td>OnTopReplica</td>
+    <td>A real-time always-on-top “replica” of a window of your choice, for Windows Vista, 7, 8, or 10.</td>
+    <td><a href="https://github.com/LorenzCK/OnTopReplica">Download</a></td>
+    <td>Productivity</td>
+</tr>     
+        
+<tr>
+    <td>OpenSCAD</td>
+    <td>OpenSCAD is a free software application for creating solid 3D CAD objects.</td>
+    <td><a href="http://www.openscad.org/">Download</a></td>
+    <td>Modeling</td>
+</tr>   
+
+<tr>
+    <td>OpenShot</td>
+    <td>OpenShot Video Editor is a free and open-source video editor for FreeBSD, Linux, macOS, and Windows</td>
+    <td><a href="https://www.openshot.org/">Download</a></td>
+    <td>Video Editing</td>
+</tr>    
+
+<tr>
+    <td>OpenToonz</td>
+    <td>Toonz is a family of 2D animation software. The base application is being developed by Dwango as open-source software under the name OpenToonz.</td>
+    <td><a href="https://opentoonz.github.io/e/">Download</a></td>
+    <td>Video Animation</td>
+</tr>  
+
+<tr>
+    <td>Opera</td>
+    <td>Opera is a secure, innovative browser used by millions around the world with a built-in ad blocker, free VPN, units converter, social messengers, battery saver and much more - all for your best browsing experience.</td>
+    <td><a href="https://www.opera.com/">Download</a></td>
+    <td>Internet</td>
+</tr> 
+
+<tr>
+    <td>Origin</td>
+    <td>Origin is an online gaming, digital distribution and digital rights management platform developed by Electronic Arts that allows users to purchase games on the internet for PC and mobile platforms, and download them with the Origin client.</td>
+    <td><a href="https://www.origin.com/can/en-us/">Download</a></td>
+    <td>Gaming Platform</td>
+</tr> 
+
+<tr>
+    <td>PCI-Z</td>
+    <td>PCI-Z is a freeware lightweight system utility designed to provide information about (unknown) PCI (PCI-E, PCI-X...) devices and helps you find appropriate device drivers.</td>
+    <td><a href="https://www.pci-z.com/">Download</a></td>
+    <td>Hardware</td>
+</tr> 
+
+<tr>
+    <td>Paint.NET</td>
+    <td>Paint.net is a freeware raster graphics editor program for Microsoft Windows, developed on the .NET Framework. </td>
+    <td><a href="https://www.getpaint.net/">Download</a></td>
+      <td>Image Creation</td>
+</tr>
+        
+<tr>
+    <td>Parsec</td>
+    <td>Parsec uses its game streaming technology to let you access your gaming PC from anywhere and invite your friends to connect and play local multiplayer games online.</td>
+    <td><a href="https://www.parsecgaming.com/">Download</a></td>
+    <td>Gaming</td>
+</tr>
+
+<tr>
+    <td>Paul's Extreme Sound Stretch</td>
+    <td>Paul's Extreme Sound Stretch can stretch your audio up to insane levels, can turn 1 minute of audio into 10 hours or more.</td>
+    <td><a href="http://hypermammut.sourceforge.net/paulstretch/">Download</a></td>
+    <td>Audio</td>
+</tr>
+    
+<tr>
+    <td>PeaZip</td>
+    <td>PeaZip is a free and open-source file manager and file archiver for Microsoft Windows, Linux and BSD made by Giorgio Tani. It supports its native PEA archive format and other mainstream formats, with special focus on handling open format.</td>
+    <td><a href="http://www.peazip.org/">Download</a></td>
+    <td>File</td>
+</tr>      
+        
+<tr>
+    <td>Pencil Project</td>
+    <td>Pencil is built for the purpose of providing a free and open-source GUI prototyping tool that people can easily install and use to create mockups in popular desktop platforms.</td>
+    <td><a href="https://pencil.evolus.vn/">Download</a></td>
+    <td>Development</td>
+</tr>		
+		
+<tr>
+    <td>Pencil2D</td>
+    <td>Pencil2D is a free and open-source 2D animation software available for Windows, Mac OS, and Linux. It is a fork of 'Pencil'. The application uses a bitmap/vector drawing interface to produce simple 2D graphics and drawings as well as animation.</td>
+    <td><a href="https://www.pencil2d.org/">Download</a></td>
+    <td>Video Animation</td>
+</tr>                   
+        
+<tr>
+    <td>pfSense</td>
+    <td>pfSense is an open source firewall/router computer software distribution based on FreeBSD. It is installed on a physical computer or a virtual machine to make a dedicated firewall/router for a network.</td>
+    <td><a href="https://www.pfsense.org/">Download</a></td>
+    <td>Networking</td>
+</tr>  
+
+<tr>
+    <td>PhraseExpress</td>
+    <td>PhraseExpress manages frequently used text snippets and autotext for helpdesks, medical transcription, legal transcription and customer support.</td>
+    <td><a href="https://www.phraseexpress.com/">Download</a></td>
+    <td>Productivity</td>
+</tr> 
+    
+<tr>
+    <td>PicPick</td>
+    <td>A full-featured screen capture tool, Intuitive image editor, color picker, color palette, pixel-ruler, protractor, crosshair, whiteboard and more.</td>
+    <td><a href="http://ngwin.com/picpick">Download</a></td>
+    <td>Screenshot</td>
+</tr>    
+
+<tr>
+    <td>Piskel</td>
+    <td>Piskel is a lightweight pixel art editor.</td>
+    <td><a href="https://www.piskelapp.com/">Download</a></td>
+      <td>Image Creation</td>
+</tr>    
+        
+<tr>
+    <td>Plex</td>
+    <td>Plex brings your favorite media together in one place, making it beautiful and easy to enjoy. Plex organizes your personal video, music, and photo collections and streams them to all of your devices.</td>
+    <td><a href="https://www.plex.tv/">Download</a></td>
+    <td>Media</td>
+</tr>       
+
+<tr>
+    <td>PngOptimizer</td>
+    <td>Cleans your PNG files of useless or wrong information. Reduces your PNG files weight.</td>
+    <td><a href="https://psydk.org/pngoptimizer">Download</a></td>
+    <td>Image Compression</td>
+</tr> 
+
+<tr>
+    <td>pngquant</td>
+    <td>pngquant is a command-line utility and a library for lossy compression of PNG images.</td>
+    <td><a href="https://pngquant.org/">Download</a></td>
+    <td>Image Compression</td>
+</tr> 
+        
+<tr>
+    <td>PortableApps.com</td>
+    <td>PortableApps.com is a website offering many free, commonly used Windows applications that have been specially packaged for portability. These portable applications can be used from removable media such as USB flash drives.</td>
+    <td><a href="https://portableapps.com/">Download</a></td>
+    <td>Install</td>
+</tr>        
+
+<tr>
+    <td>PostgreSQL</td>
+    <td>PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.</td>
+    <td><a href="https://www.postgresql.org/">Download</a></td>
+    <td>Development</td>
+</tr>   
+
+<tr>
+    <td>Postman</td>
+    <td>Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster.</td>
+    <td><a href="https://www.getpostman.com/">Download</a></td>
+    <td>Development</td>
+</tr>      
+        
+<tr>
+    <td>Prime95</td>
+    <td>Prime95 is the freeware application written by George Woltman that is used by GIMPS, a distributed computing project dedicated to finding new Mersenne prime numbers.</td>
+    <td><a href="https://www.mersenne.org/download/">Download</a></td>
+    <td>Hardware</td>
+</tr>          
+        
+<tr>
+    <td>Process Explorer</td>
+    <td>Process Explorer is a freeware task manager and system monitor for Microsoft Windows created by Winternals Software, which has been acquired by Microsoft.</td>
+    <td><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer">Download</a></td>
+    <td>System Tools</td>
+</tr>     
+    
+<tr>
+    <td>Process Hacker</td>
+    <td>A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.</td>
+    <td><a href="https://processhacker.sourceforge.io/">Download</a></td>
+    <td>System Tools</td>
+</tr>       
+        
+<tr>
+    <td>Putty</td>
+    <td>PuTTY is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a serial port.</td>
+    <td><a href="https://www.putty.org/">Download</a></td>
+    <td>Networking</td>
+</tr>
+    
+<tr>
+    <td>PyCharm</td>
+    <td>PyCharm is an Integrated Development Environment used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains.</td>
+    <td><a href="https://www.jetbrains.com/pycharm/">Download</a></td>
+    <td>Development</td>
+</tr>    
+
+<tr>
+    <td>Python</td>
+    <td>Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace.</td>
+    <td><a href="https://www.python.org/">Download</a></td>
+    <td>Development</td>   
+</tr>
+
+<tr>
+    <td>Q-Dir</td>
+    <td>The Quad-Directory-Explorer makes your files and folders easy to manage, either installed or as a portable Windows program.</td>
+    <td><a href="https://www.softwareok.com/?seite=Freeware/Q-Dir">Download</a></td>
+    <td>File Manager</td>   
+</tr>
+    
+<tr>
+    <td>QTTabBar</td>
+    <td>Extends Explorer by tabs and extra folder views.</td>
+    <td><a href="http://qttabbar.wikidot.com/">Download</a></td>
+    <td>Personalization</td>   
+</tr>   
+
+<tr>
+    <td>Quassel</td>
+    <td>Quassel IRC, or Quassel, is a graphical, distributed, cross-platform IRC client, introduced in 2008.</td>
+    <td><a href="https://quassel-irc.org/">Download</a></td>
+    <td>Social</td>   
+</tr>
+    
+<tr>
+    <td>Quiet on the Set</td>
+    <td>Prevent someone from turning up the volume on a Windows machine beyond a maximum volume</td>
+    <td><a href="https://github.com/troylar/quiet-on-the-set">Download</a></td>
+    <td>Audio</td>   
+</tr>  
+
+<tr>
+    <td>QuiteRSS</td>
+    <td>QuiteRSS is an open source cross-platform news aggregator for RSS and Atom news feeds.</td>
+    <td><a href="https://quiterss.org/">Download</a></td>
+    <td>Office</td>   
+</tr>     
+        
+<tr>
+    <td>R</td>
+    <td>R is a free software environment for statistical computing and graphics.</td>
+    <td><a href="https://www.r-project.org/">Download</a></td>
+    <td>Office</td>
+</tr>  
+
+<tr>
+    <td>RAMMap</td>
+    <td>RAMMap is an advanced physical memory usage analysis utility for Windows.</td>
+    <td><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/rammap">Download</a></td>
+    <td>Hardware</td>
+</tr>  
+    
+<tr>
+    <td>Rainmeter</td>
+    <td>Rainmeter is a free and open-source desktop customization utility for Windows, released under the GNU GPL v2 licence.</td>
+    <td><a href="https://www.rainmeter.net/">Download</a></td>
+    <td>Personalization</td>
+</tr>
+
+<tr>
+    <td>RawTherapee</td>
+    <td>RawTherapee is a cross-platform raw image processing program, released under the GNU General Public License Version 3.</td>
+    <td><a href="http://rawtherapee.com/">Download</a></td>
+	<td>Image Processing</td>
+</tr> 
+        
+<tr>
+    <td>RazorSQL</td>
+    <td>RazorSQL is an SQL Editor and SQL database query tool for macOS, Windows, Linux, and Mac OS X. </td>
+    <td><a href="https://razorsql.com/">Download</a></td>
+    <td>Development</td>
+</tr> 	
+
+<tr>
+    <td>ReVive</td>
+    <td>This is a compatibility layer between the Oculus SDK and OpenVR. It allows you to play Oculus-exclusive games on your HTC Vive.</td>
+    <td><a href="https://github.com/LibreVR/Revive">Download</a></td>
+    <td>Gaming Tools</td>
+</tr>	
+		
+<tr>
+    <td>REAPER</td>
+    <td>REAPER is a multitrack recording and a digital audio workstation created by Cockos.</td>
+    <td><a href="https://www.reaper.fm/">Download</a></td>
+    <td>Audio</td>
+</tr>         
+                
+<tr>
+    <td>Recuva</td>
+    <td>Recuva is an undeletion program for Windows, developed by Piriform. It is able to undelete files that have been marked as deleted; the operating system marks the areas of the disk in which they were stored as free space.</td>
+    <td><a href="https://www.ccleaner.com/recuva">Download</a></td>
+    <td>File Recovery</td>
+</tr>
+    
+<tr>
+    <td>Remove Empty Directories</td>
+    <td>"One might think that searching and deleting empty directories is a trivial thing, but once you have hundreds of them it get’s really exhausting. That’s the reason I made RED. It’s a small and simple tool that searches and deletes empty directories recursively below a given start folder. And before deleting anything it let’s you check all empty directories it found."</td>
+    <td><a href="http://www.jonasjohn.de/red.htm">Download</a></td>
+    <td>File</td>
+</tr>     
+
+<tr>
+    <td>Redis Desktop Manager</td>
+    <td>Open source cross-platform Redis Desktop Manager based on Qt 5.</td>
+    <td><a href="https://redisdesktop.com/">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>ReShade</td>
+    <td>ReShade is an advanced, fully generic post-processing injector for games and video software developed by crosire.</td>
+    <td><a href="https://reshade.me/">Download</a></td>
+    <td>Gaming Tools</td>
+</tr>
+
+<tr>
+    <td>Resonic</td>
+    <td>Resonic is the planet's fastest audio and music player, browser, and sample manager, built around a big waveform view and a frequency analyzer.</td>
+    <td><a href="https://resonic.at/">Download</a></td>
+    <td>Music</td>
+</tr>   
+    
+<tr>
+    <td>Revo Uninstaller</td>
+    <td>Revo Uninstaller is an uninstaller for Microsoft Windows. It uninstalls programs and additionally removes any files and Windows registry entries left behind by the program's uninstaller or by the Windows uninstall function.</td>
+    <td><a href="https://www.revouninstaller.com/">Download</a></td>
+    <td>Install</td>
+</tr>      
+        
+<tr>
+    <td>RiftCat</td>
+    <td>Use VRidge with your PC to turn your Cardboard into powerful PC VR headset. Play games designed for high end quality headsets.</td>
+    <td><a href="https://riftcat.com/vridge">Download</a></td>
+    <td>Gaming</td>
+</tr>   
+
+<tr>
+    <td>RIOT</td>
+    <td>RIOT has an easy to use interface to compare the original with the optimized image in real time and instantly see the resulting file size.</td>
+    <td><a href="http://luci.criosweb.ro/riot/">Download</a></td>
+    <td>Image Compression</td>
+</tr> 
+    
+<tr>
+    <td>RivaTuner</td>
+    <td>RivaTuner is a freeware overclocking and hardware monitoring program that was first developed by Alexey Nicolaychuk in 1997 for the NVIDIA video cards.</td>
+    <td><a href="http://www.guru3d.com/content-page/rivatuner.html">Download</a></td>
+    <td>Hardware</td>
+</tr>    
+
+<tr>
+    <td>Robo 3T</td>
+    <td>Robo 3T (formerly Robomongo) is the free lightweight GUI for MongoDB enthusiasts.</td>
+    <td><a href="https://robomongo.org/">Download</a></td>
+    <td>Development</td>
+</tr>  
+        
+<tr>
+    <td>Rufus</td>
+    <td>Rufus is a free and open-source portable application for Microsoft Windows that can be used to format and create bootable USB flash drives or Live USBs. It is developed by Pete Batard of Akeo Consulting.</td>
+    <td><a href="https://rufus.akeo.ie/">Download</a></td>
+    <td>OS</td>
+</tr>  
+
+<tr>
+    <td>SDelete</td>
+    <td>SDelete (Secure Delete) is such an application. You can use SDelete both to securely delete existing files, as well as to securely erase any file data that exists in the unallocated portions of a disk (including files that you have already deleted or encrypted).</td>
+    <td><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete">Download</a></td>
+    <td>File Security</td>
+</tr>   
+    
+<tr>
+    <td>SMPlayer</td>
+    <td>SMPlayer is a cross-platform graphical front-end for MPlayer and forks of Mplayer using GUI widgets offered by Qt.</td>
+    <td><a href="https://www.smplayer.info/">Download</a></td>
+    <td>Video Player</td>
+</tr> 
+
+<tr>
+    <td>SSD-Z</td>
+    <td>SSD-Z is an information tool for Solid State Drives and other disk devices.</td>
+    <td><a href="http://aezay.dk/aezay/ssdz/">Download</a></td>
+    <td>Hardware</td>
+</tr>   
+
+<tr>
+    <td>STDU Viewer</td>
+    <td>STDU Viewer is computer software, a compact viewer for many computer file formats.</td>
+    <td><a href="http://stdutility.com/stduviewer.html">Download</a></td>
+    <td>Office</td>
+</tr> 
+
+<tr>
+    <td>SUMo</td>
+    <td>SUMo (Software Update Monitor) keeps your PC up-to-date & safe by using the most recent version of your favorite software!</td>
+    <td><a href="https://www.kcsoftwares.com/?sumo">Download</a></td>
+    <td>Hardware</td>
+</tr> 
+    
+<tr>
+    <td>Sandboxie</td>
+    <td>Sandboxie is a sandbox-based isolation program developed by Sophos, for 32- and 64-bit Windows NT-based operating systems.</td>
+    <td><a href="https://www.sandboxie.com/">Download</a></td>
+    <td>Productivity</td>
+</tr>   
+
+<tr>
+    <td>ScreenToGif</td>
+    <td>Screen, webcam and sketchboard recorder with an integrated editor.</td>
+    <td><a href="http://www.screentogif.com/">Download</a></td>
+    <td>Screenshot</td>
+</tr>  
+      
+<tr>
+    <td>ZBrushCoreMini</td>
+    <td>"Enjoy a true ZBrush experience as you take your first steps into the exciting world of digital sculpting with ZBrushCoreMini... completely free!*</td>
+    <td><a href="https://zbrushcore.com/mini/index.php">Download</a></td>
+    <td>Modeling</td>
+</tr>
+      
+<tr>
+    <td>SeaTools</td>
+    <td>SeaTools is a computer hard disk analysis software developed and released by Seagate Technology.</td>
+    <td><a href="https://www.seagate.com/ca/en/support/downloads/seatools/">Download</a></td>
+    <td>Hardware</td>
+</tr>
+        	  
+<tr>
+    <td>Search Everything</td>
+    <td>Everything is a desktop search utility for Windows that can rapidly find files and folders by name.</td>
+    <td><a href="https://www.voidtools.com/">Download</a></td>
+    <td>File</td>
+</tr>
+        
+<tr>
+    <td>Sharex</td>
+    <td>ShareX is a free and open-source screenshot and screencast utility for Microsoft Windows. It is published under the GNU General Public License. The project's source code is hosted at the GitHub code-sharing and code development platform.</td>
+    <td><a href="https://getsharex.com/">Download</a></td>
+    <td>Screenshot</td>
+</tr>
+
+<tr>
+    <td>ShellExView</td>
+    <td>ShellExView is a utility that displays the details of shell extensions installed on your computer, and allows you to easily disable and enable each shell extension.</td>
+    <td><a href="https://www.nirsoft.net/utils/shexview.html">Download</a></td>
+    <td>System Tools</td>
+</tr>
+        
+<tr>
+    <td>ShowKeyPlus</td>
+    <td>Find your Windows product key with ShowKeyPlus.</td>
+    <td><a href="https://github.com/Superfly-Inc/ShowKeyPlus/releases">Download</a></td>
+    <td>System Tools</td>
+</tr>        
+        
+<tr>
+    <td>SidebarDiagnostics</td>
+    <td>A simple sidebar for Windows desktop that displays hardware diagnostic information.</td>
+    <td><a href="https://github.com/ArcadeRenegade/SidebarDiagnostics">Download</a></td>
+    <td>Hardware</td>
+</tr>	
+
+<tr>
+    <td>Simplenote</td>
+    <td>Simplenote is a note-taking application with markdown support. In addition to cross-platform apps, it can be accessed via most web browsers.</td>
+    <td><a href="https://simplenote.com/">Download</a></td>
+    <td>Productivity</td>
+</tr>	
+		
+<tr>
+    <td>Sizer</td>
+    <td>Sizer is a freeware utility that allows you to resize any window to an exact, predefined size.</td>
+    <td><a href="http://www.brianapps.net/sizer/">Download</a></td>
+    <td>Productivity</td>
+</tr>       
+    
+<tr>
+    <td>SkypeLogView</td>
+    <td>SkypeLogView reads the log files created by Skype application, and displays the details of incoming/outgoing calls, chat messages, and file transfers made by the specified Skype account.</td>
+    <td><a href="https://www.nirsoft.net/utils/skype_log_view.html">Download</a></td>
+    <td>System Tools</td>
+</tr>
+    
+<tr>
+    <td>SmartGit</td>
+    <td>SmartGit is a Git client with support for GitHub Pull Requests+Comments and SVN. It runs on Mac OS X, Windows and Linux.</td>
+    <td><a href="https://www.syntevo.com/smartgit/">Download</a></td>
+    <td>Development</td>
+</tr>    
+
+<tr>
+    <td>SmoothVideo Project</td>
+    <td>SmoothVideo Project converts any video to 60 fps (and even higher) and performs this in real time right in your favorite video player.</td>
+    <td><a href="https://www.svp-team.com/wiki/Main_Page">Download</a></td>
+    <td>Video Tools</td>
+</tr>  
+    
+<tr>
+    <td>SoapUI</td>
+    <td>SoapUI is an open-source web service testing application for service-oriented architectures and representational state transfers.</td>
+    <td><a href="https://www.soapui.org/">Download</a></td>
+    <td>Networking</td>
+</tr>   
+    
+<tr>
+    <td>Soundswitch</td>
+    <td>SoundSwitch is a free open-source application for Windows that let you switch your default playback devices and/or recording devices using simple hotkeys.</td>
+    <td><a href="https://soundswitch.aaflalo.me/">Download</a></td>
+    <td>Audio</td>
+</tr> 
+    
+<tr>
+    <td>Sourcetree</td>
+    <td>A Git GUI that offers a visual representation of your repositories. Sourcetree is a free Git client for Windows and Mac.</td>
+    <td><a href="https://www.sourcetreeapp.com/">Download</a></td>
+    <td>Development</td>
+</tr>     
+
+<tr>
+    <td>SpaceMonger</td>
+    <td>Free up storage space on PCs, shared-network and in the cloud with SpaceMonger™.</td>
+    <td><a href="https://www.stardock.com/products/spacemonger/">Download</a></td>
+    <td>File</td>
+</tr>                
+        
+<tr>
+    <td>Speccy</td>
+    <td>Speccy, developed by Piriform, is a freeware utility software which shows the user information about hardware and software of the computer.</td>
+    <td><a href="https://www.ccleaner.com/speccy">Download</a></td>
+    <td>Hardware</td>
+</tr>   
+
+<tr>
+    <td>SpeedCrunch</td>
+    <td>SpeedCrunch is a high-precision scientific calculator featuring a fast, keyboard-driven user interface. It is free and open-source software, licensed under the GPL.</td>
+    <td><a href="http://www.speedcrunch.org/">Download</a></td>
+    <td>Productivity</td>
+</tr>  
+
+<tr>
+    <td>Steam</td>
+    <td>Steam is a digital distribution platform developed by Valve Corporation, which offers digital rights management, multiplayer gaming, video streaming and social networking services. </td>
+    <td><a href="https://store.steampowered.com/">Download</a></td>
+    <td>Gaming Platform</td>
+</tr>    
+
+<tr>
+    <td>Steam Cleaner</td>
+    <td>Steam Cleaner is a tool that will remove large amounts of data left behind by Steam, Origin, Uplay and GoG. This tool can clear up gigabytes of data in a few seconds. There is no configuration needed, simply run it and it will detect all your installed games and then some.</td>
+    <td><a href="https://github.com/Codeusa/SteamCleaner">Download</a></td>
+    <td>Gaming Tools</td>
+</tr>   
+
+<tr>
+    <td>Stellar Phoenix Windows Data Recovery</td>
+    <td>Stellar Phoenix Windows Data Recovery is an easy to use Windows recovery software to get back lost documents, emails, photos, videos & many more from HDD, USB, Memory Card etc.</td>
+    <td><a href="https://www.stellarinfo.com/windows-data-recovery.php">Download</a></td>
+    <td>File Recovery</td>
+</tr>    
+    
+<tr>
+    <td>Sublime Text</td>
+    <td>Sublime Text is a proprietary cross-platform source code editor with a Python application programming interface.</td>
+    <td><a href="https://www.sublimetext.com/">Download</a></td>
+    <td>Development</td>
+</tr>        
+                 
+<tr>
+    <td>SumatraPDF</td>
+    <td>Sumatra PDF is a free and open-source document viewer.</td>
+    <td><a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">Download</a></td>
+    <td>Office</td>
+</tr>
+
+<tr>
+    <td>SunsetScreen</td>
+    <td>SunsetScreen is a free Windows app which helps take the glare off your your screen in the evening.</td>
+    <td><a href="http://www.skytopia.com/software/sunsetscreen/">Download</a></td>
+    <td>Personalization</td>
+</tr>
+    
+<tr>
+    <td>Superf4</td>
+    <td>Kill programs instantly with Ctrl+Alt+F4.</td>
+    <td><a href="https://stefansundin.github.io/superf4/">Download</a></td>
+    <td>Productivity</td>
+</tr>    
+    
+<tr>
+    <td>Superposition Benchmark</td>
+    <td>Extreme performance and stability test for PC hardware: video card, power supply, cooling system.</td>
+    <td><a href="https://benchmark.unigine.com/superposition">Download</a></td>
+    <td>Hardware</td>
+</tr>     
+        
+<tr>
+    <td>System Explorer</td>
+    <td>System Explorer offers detailed information about Tasks, Processes, Modules, Startups, IE Addons, Uninstallers, Windows, Services, Drivers, Connections and Opened Files.</td>
+    <td><a href="http://systemexplorer.net/">Download</a></td>
+    <td>System Tools</td>
+</tr>        
+
+<tr>
+    <td>Taskade</td>
+    <td>Taskade makes teamwork simpler, smarter, and more fun. Create lists, take notes, get things done.</td>
+    <td><a href="https://www.taskade.com/">Download</a></td>
+    <td>Productivity</td>
+</tr>  
+      
+<tr>
+    <td>TeamViewer</td>
+    <td>TeamViewer is a proprietary computer software package for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.</td>
+    <td><a href="https://www.teamviewer.com/en/">Download</a></td>
+    <td>Productivity</td>
+</tr>
+
+<tr>
+    <td>Telegram</td>
+    <td>Telegram is a cloud-based instant messaging service developed by Telegram Messenger LLP, a privately held company registered in London, United Kingdom, founded by the Russian entrepreneur Pavel Durov.</td>
+    <td><a href="https://telegram.org/">Download</a></td>
+    <td>Social</td>
+</tr>
+    
+<tr>
+    <td>Teracopy</td>
+    <td>TeraCopy is a freemium file transfer utility designed as an alternative for the built-in Windows Explorer file transfer feature. Its focus is data integrity, file transfer reliability and the ability to pause or resume file transfers.</td>
+    <td><a href="https://www.codesector.com/teracopy">Download</a></td>
+    <td>File</td>
+</tr> 
+
+<tr>
+    <td>TestDisk</td>
+    <td>TestDisk is a free and open-source data recovery utility.</td>
+    <td><a href="https://www.cgsecurity.org/wiki/TestDisk">Download</a></td>
+    <td>File Recovery</td>
+</tr>
+    
+<tr>
+    <td>Thunderbird</td>
+    <td>Mozilla Thunderbird is a free and open-source cross-platform email client, news client, RSS and chat client developed by the Mozilla Foundation.</td>
+    <td><a href="https://www.thunderbird.net/en-US/">Download</a></td>
+    <td>Internet</td>
+</tr>     
+
+<tr>
+    <td>TinyNvidiaUpdateChecker</td>
+    <td>Tiny application which checks for NVIDIA GeForce GPU drivers, written in C-sharp (C#) for Windows.</td>
+    <td><a href="https://github.com/ElPumpo/TinyNvidiaUpdateChecker">Download</a></td>
+    <td>Hardware</td>
+</tr>  
+
+<tr>
+    <td>TortoiseGit</td>
+    <td>TortoiseGit is a Git revision control client, implemented as a Windows shell extension and based on TortoiseSVN.</td>
+    <td><a href="https://tortoisegit.org/">Download</a></td>
+    <td>File</td>
+</tr>
+
+<tr>
+    <td>TortoiseSVN</td>
+    <td>TortoiseSVN is a Subversion client, implemented as a Microsoft Windows shell extension, that helps programmers manage different versions of the source code for their programs.</td>
+    <td><a href="https://tortoisesvn.net/">Download</a></td>
+    <td>File</td>
+</tr>
+
+<tr>
+    <td>Total Commander</td>
+    <td>Total Commander is an Orthodox File Manager for Windows, Windows Phone and Android, developed by the Swiss Christian Ghisler using Delphi.</td>
+    <td><a href="https://www.ghisler.com/">Download</a></td>
+    <td>File Manager</td>
+</tr>
+    
+<tr>
+    <td>TranslucentTB</td>
+    <td>A lightweight (uses a few MB of RAM and almost no CPU) utility that makes the Windows taskbar translucent/transparent.</td>
+    <td><a href="https://github.com/TranslucentTB/TranslucentTB">Download</a></td>
+    <td>Personalization</td>
+</tr>       
+        	  
+<tr>
+    <td>Treesize</td>
+    <td>TreeSize is a disk space analyzer written by JAM Software.</td>
+    <td><a href="https://www.jam-software.com/treesize_free/">Download</a></td>
+    <td>File</td>
+</tr>
+        
+<tr>
+    <td>UNetbootin</td>
+    <td>UNetbootin is a cross-platform utility that can create live USB systems and can load a variety of system utilities or install various Linux distributions and other operating systems without a CD.</td>
+    <td><a href="https://unetbootin.github.io/">Download</a></td>
+    <td>OS</td>
+</tr>  
+
+<tr>
+    <td>UWPHook</td>
+    <td>Small project to link UWP games to Steam.</td>
+    <td><a href="https://github.com/BrianLima/UWPHook">Download</a></td>
+    <td>Gaming Tools</td>
+</tr>  
+        
+<tr>
+    <td>Ultimate Windows Tweaker 4</td>
+    <td>Ultimate Windows Tweaker 4 is one of the most popular and best tweaking programs for Windows 10 that allows customizing and personalizing the computer. It allows improving the system and making the OS safer, faster and more stable.</td>
+    <td><a href="http://www.thewindowsclub.com/ultimate-windows-tweaker-4-windows-10">Download</a></td>
+    <td>System Tools</td>
+</tr>  
+    
+<tr>
+    <td>Unchecky</td>
+    <td>Unchecky aims to keep potentially unwanted programs out of your computer. Unchecky automatically unchecks unrelated offers during the installation process, both saving you mouse clicks and making it less likely to miss a checkbox of an unwanted offer.</td>
+    <td><a href="https://unchecky.com/">Download</a></td>
+    <td>Install</td>
+</tr> 
+
+<tr>
+    <td>Unified Remote 3</td>
+    <td>Unified Remote 3 allows you to use your phone to control your PC remotely.</td>
+    <td><a href="https://www.unifiedremote.com/download">Download</a></td>
+    <td>Productivity</td>
+</tr>     
+        
+<tr>
+    <td>Unity</td>
+    <td>Unity is a cross-platform game engine developed by Unity Technologies, which is primarily used to develop both three-dimensional and two-dimensional video games and simulations for computers, consoles, and mobile devices.</td>
+    <td><a href="https://unity3d.com/">Download</a></td>
+    <td>Development</td>
+</tr>  
+    
+<tr>
+    <td>Unlocker</td>
+    <td>Unlocker helps delete locked files with error messages including "cannot delete file," and "access is denied."</td>
+    <td><a href="http://www.majorgeeks.com/files/details/unlocker.html">Download</a></td>
+    <td>File Deletion</td>
+</tr>    
+
+<tr>
+    <td>Unreal Engine</td>
+    <td>Unreal Engine is a suite of integrated tools for game developers to design and build games, simulations, and visualizations.</td>
+    <td><a href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4">Download</a></td>
+    <td>Development</td>
+</tr>
+
+<tr>
+    <td>vJoy</td>
+    <td>vJoy is a device driver that bridges the gap between any device that is not a joystick and an application that requires a joystick.</td>
+    <td><a href="https://github.com/shauleiz/vJoy">Download</a></td>
+    <td>Input</td>
+</tr> 
+
+<tr>
+    <td>VLC Media Player</td>
+    <td>VLC Media Player is a free and open-source, portable and cross-platform media player and streaming media server developed by the VideoLAN project. </td>
+    <td><a href="https://www.7-zip.org/">Download</a></td>
+    <td>Video Player</td>
+</tr>
+        
+<tr>
+    <td>VNC Connect</td>
+    <td>"VNC Connect is the latest version of our remote access software for personal and commercial use. It consists of a VNC Server app for the computer you want to control, plus supporting programs."</td>
+    <td><a href="https://www.realvnc.com/en/connect/download/vnc/">Download</a></td>
+    <td>Productivity</td>
+</tr>  
+
+<tr>
+    <td>Vagrant</td>
+    <td>Vagrant is an open-source software product for building and maintaining portable virtual software development environments, e.g. for VirtualBox, Hyper-V, Docker containers, VMware, and AWS which try to simplify software configuration management of virtualizations in order to increase development productivity.</td>
+    <td><a href="https://www.vagrantup.com/">Download</a></td>
+    <td>OS</td>
+</tr> 
+    
+<tr>
+    <td>Valley Benchmark</td>
+    <td>Extreme performance and stability test for PC hardware: video card, power supply, cooling system.</td>
+    <td><a href="https://benchmark.unigine.com/valley">Download</a></td>
+    <td>Hardware</td>
+</tr>   
+        
+<tr>
+    <td>VeraCrypt</td>
+    <td>VeraCrypt is an open-source utility used for on-the-fly encryption. It can create a virtual encrypted disk within a file or encrypt a partition or the entire storage device with pre-boot authentication.</td>
+    <td><a href="https://www.veracrypt.fr/en/Downloads.html">Download</a></td>
+    <td>File Security</td>
+</tr> 
+    
+<tr>
+    <td>VideoPaper</td>
+    <td>VideoPaper allows you to set a video for an desktop background.</td>
+    <td><a href="https://www.reddit.com/r/VideoPaper/">Download</a></td>
+    <td>Personalization</td>
+</tr>    
+    
+<tr>
+    <td>VirtualBox</td>
+    <td>Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.</td>
+    <td><a href="https://www.virtualbox.org/">Download</a></td>
+    <td>OS</td>
+</tr>
+      
+<tr>
+    <td>Visual Studio</td>
+    <td>Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft. It is used to develop computer programs, as well as web sites, web apps, web services and mobile apps.</td>
+    <td><a href="https://www.visualstudio.com/">Download</a></td>
+    <td>Development</td>
+</tr>
+    
+<tr>
+    <td>Vivadli</td>
+    <td>Vivaldi is a freeware, cross-platform web browser developed by Vivaldi Technologies, a company founded by Opera Software co-founder and former CEO Jon Stephenson von Tetzchner and Tatsuki Tomita.</td>
+    <td><a href="https://vivaldi.com/?lang=en">Download</a></td>
+    <td>Internet</td>
+</tr>    
+    
+<tr>
+    <td>VMware Workstation Player</td>
+    <td>VMware Workstation is a hosted hypervisor that runs on x64 versions of Windows and Linux operating systems (an x86 version of earlier releases was available); it enables users to set up virtual machines (VMs) on a single physical machine, and use them simultaneously along with the actual machine.</td>
+    <td><a href="https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html">Download</a></td>
+    <td>OS</td>
+</tr>  
+
+<tr>
+    <td>WMI Explorer</td>
+    <td>WMI Explorer is a utility intended to provide the ability to browse and view WMI namespaces/classes/instances/properties in a single pane of view.</td>
+    <td><a href="https://archive.codeplex.com/?p=wmie">Download</a></td>
+    <td>System Tools</td>
+</tr>     
+                	  
+<tr>
+    <td>WinDirStat</td>
+    <td>WinDirStat is a graphical representation of the contents on your harddrive.</td>
+    <td><a href="https://windirstat.net/">Download</a></td>
+    <td>File</td>
+</tr>
+    
+<tr>
+    <td>WinMerge</td>
+    <td>WinMerge is a free software tool for data comparison and merging of text-like files. It is useful for determining what has changed between versions, and then merging changes between versions.</td>
+    <td><a href="http://winmerge.org/">Download</a></td>
+    <td>File</td>
+</tr> 
+
+<tr>
+    <td>WinSCP</td>
+    <td>WinSCP is a free and open-source SFTP, FTP, WebDAV, Amazon S3 and SCP client for Microsoft Windows. Its main function is secure file transfer between a local and a remote computer.</td>
+    <td><a href="https://winscp.net/eng/download.php">Download</a></td>
+    <td>File</td>
+</tr> 
+    
+<tr>
+    <td>Winaero Tweaker</td>
+    <td>Winaero Tweaker is a universal tweaker software which supports Windows 7, Windows 8, Windows 8.1 and Windows 10.</td>
+    <td><a href="https://winaero.com/comment.php?comment.news.1836">Download</a></td>
+    <td>System Tools</td>    
+</tr>     
+    
+<tr>
+    <td>Winamp</td>
+    <td>Winamp is a media player for Windows, macOS and Android.</td>
+    <td><a href="http://www.winamp.com/">Download</a></td>
+    <td>Music</td>    
+</tr>   
+        
+<tr>
+    <td>Wireless Network Watcher</td>
+    <td>Wireless Network Watcher scans your wireless network and displays the list of all computers and devices that are currently connected to your network.</td>
+    <td><a href="https://www.nirsoft.net/utils/wireless_network_watcher.html">Download</a></td>
+    <td>Networking</td>
+</tr>        
+
+<tr>
+    <td>WireShark</td>
+    <td>Wireshark is a free and open source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.</td>
+    <td><a href="https://www.wireshark.org/">Download</a></td>
+    <td>Networking</td>
+</tr> 
+    
+<tr>
+    <td>WizMouse</td>
+    <td>WizMouse causes your mouse wheel to scroll the window under the mouse pointer instead of the currently focused window.</td>
+    <td><a href="http://antibody-software.com/web/software/software/wizmouse-makes-your-mouse-wheel-work-on-the-window-under-the-mouse/">Download</a></td>
+    <td>Productivity</td>
+</tr>   
+
+<tr>
+    <td>WordWeb</td>
+    <td>WordWeb is an international English dictionary and thesaurus program for Microsoft Windows, iOS, Android and Mac OS X.</td>
+    <td><a href="https://wordweb.info/free/">Download</a></td>
+    <td>Office</td>
+</tr>  
+
+<tr>
+    <td>Wox</td>
+    <td>A full-featured launcher, access programs and web contents as you type.</td>
+    <td><a href="http://www.wox.one/">Download</a></td>
+    <td>Productivity</td>
+</tr>    
+
+<tr>
+    <td>x360ce</td>
+    <td>"Xbox 360 Controller Emulator" allows your controller (gamepad, joystick, wheel, etc.) to function as an Xbox 360 controller. For example, it lets you play games such as "Grand Theft Auto" (GTA) or "Mafia II" using a Logitech Wheel.</td>
+    <td><a href="https://www.x360ce.com/">Download</a></td>
+    <td>Input</td>
+</tr>   
+
+<tr>
+    <td>XAMPP</td>
+    <td>XAMPP is a free and open source cross-platform web server solution stack package.</td>
+    <td><a href="https://www.apachefriends.org/index.html">Download</a></td>
+    <td>Networking</td>
+</tr>   
+
+<tr>
+    <td>XMPlay</td>
+    <td>XMPlay is a freeware audio player for Windows.</td>
+    <td><a href="http://support.xmplay.com/">Download</a></td>
+    <td>Music</td>
+</tr> 
+
+<tr>
+    <td>XnView MP</td>
+    <td>"XnView MP is the enhanced version of XnView Classic. It is a powerful picture viewer, browser and converter for Windows, Mac and Linux. This software can read more than 500 formats change picture size, reduce picture file size and much more!"</td>
+    <td><a href="https://www.xnview.com/en/xnviewmp/">Download</a></td>
+    <td>Image Viewer</td>
+</tr>       
+        
+<tr>
+    <td>YUMI</td>
+    <td>YUMI (Your Universal Multiboot Installer), is the successor to our MultibootISOs. It can be used to create a Multiboot Bootable USB Flash Drive containing multiple operating systems, antivirus utilities, disc cloning, diagnostic tools, and more.</td>
+    <td><a href="https://www.pendrivelinux.com/yumi-multiboot-usb-creator/">Download</a></td>
+    <td>OS</td>
+</tr>             
+        
+<tr>
+    <td>yWriter</td>
+    <td>yWriter is a word processor which breaks your novel into chapters and scenes, helping you keep track of your work while leaving your mind free to create. </td>
+    <td><a href="http://www.spacejock.com/yWriter6.html">Download</a></td>
+    <td>Office</td>
+</tr> 
+        
+<tr>
+    <td>ZBar</td>
+    <td>ZBar is an open-source C barcode reading library with C++, Python, Perl, and Ruby bindings.</td>
+    <td><a href="http://zbar.sourceforge.net/">Download</a></td>
+    <td>System Tools</td>
+</tr> 		
+
+<tr>
+    <td>Zint Barcode Generator</td>
+    <td>This program generates working barcodes.</td>
+    <td><a href="https://sourceforge.net/projects/zint/">Download</a></td>
+    <td>Productivity</td>
+</tr> 
+
+<tr>
+    <td>ZoomIt</td>
+    <td>ZoomIt is a screen zoom and annotation tool for technical presentations that include application demonstrations.</td>
+    <td><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit">Download</a></td>
+    <td>Productivity</td>
+</tr> 
+		
+<tr>
+    <td>Zotero</td>
+    <td>Zotero is a free and open-source reference management software to manage bibliographic data and related research materials.</td>
+    <td><a href="https://www.zotero.org/">Download</a></td>
+    <td>Office</td>
+</tr>    
+
+<tr>
+    <td>Oh My Zsh</td>
+    <td>Oh My Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes.</td>
+    <td><a href="http://ohmyz.sh/">Download</a></td>
+    <td>Development</td>
+</tr>  
+    
+<tr>
+    <td>XnConvert</td>
+    <td>XnConvert is a fast, powerful and free cross-platform batch image converter, It allows to automate editing for your massive photo collections, you can rotate, convert and compress your different images, photos and pictures easily, and apply over 80 actions (like resize, crop, color adjustements, filter, ...). All common picture and graphics formats are supported (JPEG, TIFF, PNG, GIF, WEBP, PSD, JPEG2000, OpenEXR, camera RAW, HEIC, PDF, DNG, CR2).</td>
+    <td><a href="https://www.xnview.com/en/xnconvert/">Download</a></td>
+    <td>Image Processing</td>
+</tr>   
+    
+<tr>
+    <td>ActivityWatch</td>
+    <td>ActivityWatch is an app that automatically tracks how you spend time on your devices. It is open source, privacy-first, cross-platform, and a great alternative to services like RescueTime, ManicTime, and WakaTime. It can be used to keep track of your productivity, time spent on different projects, bad screen habits, or just to understand how you spend your time.</td>
+    <td><a href="https://activitywatch.net/">Download</a></td>
+    <td>Productivity</td>
+</tr>   
+    
+<tr>
+    <td>Godot</td>
+    <td>Godot is a 2D and 3D, cross-platform, free and open-source game engine released under the MIT license. It was initially developed for several companies in Latin America prior to its public release. The development environment runs on multiple operating systems including Linux, macOS, and Windows.</td>
+    <td><a href="https://godotengine.org/">Download</a></td>
+    <td>Development</td>
+</tr>  
+    
+<tr>
+    <td>Workrave</td>
+    <td>Workrave is a free software application intended to prevent computer users from developing or aggravating occupational diseases such as carpal tunnel syndrome, repetitive strain injuries, or myopia.</td>
+    <td><a href="https://sourceforge.net/projects/workrave/">Download</a></td>
+    <td>Productivity</td>
+</tr>  
+    
+<tr>
+    <td>MagicaVoxel</td>
+    <td>A free lightweight GPU-based voxel art editor and interactive path tracing renderer.</td>
+    <td><a href="https://ephtracy.github.io/">Download</a></td>
+    <td>Modeling</td>
+</tr>  
+    
+<tr>
+    <td>Epic Games Store</td>
+    <td>The Epic Games Store is a digital video game storefront for Microsoft Windows and macOS, operated by Epic Games. It launched in December 2018 as both a website and a standalone launcher, the latter which is required to download and play games.</td>
+    <td><a href="https://www.epicgames.com/store/en-US/">Download</a></td>
+    <td>Gaming Platform</td>
+</tr> 
+    
+</tbody>
+</table>	           
+        
+<script>
+              
+  $(document).ready(function()
+	{
+		$("#List").tablesorter({ sortList: [[0,0], [1,0]] });
+	}
+);        
+        
+
+function searchFunction(key, id) {
+    
+  var input, filter, table, tr, td, i;
+  input = document.getElementById(key);
+  filter = input.value.toUpperCase();
+  table = document.getElementById("List");
+  tr = table.getElementsByTagName("tr");  
+  var format = id; 
+    
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[format];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+    
+</script>           
+    
+</center>	
+	
+<footer>
+    
+    <p>Copyright © 2020 LostPizzaMan. All Rights Reserved</p>
+        
+</footer>
+        
+</body>
+	
+</html>
+
